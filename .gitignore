@@ -1,0 +1,7 @@
+*.o
+sentinelpath_loader
+sentinelpath_run
+io_benchmark
+third_party/
+__pycache__/
+.pytest_cache/

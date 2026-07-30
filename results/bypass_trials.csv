@@ -1,0 +1,9 @@
+case,attempts,expected,correct,incorrect
+direct_write,100,deny,100,0
+symlink_write,100,deny,100,0
+hardlink_write,100,deny,100,0
+rename_away,100,deny,100,0
+unlink,100,deny,100,0
+rename_overwrite,100,deny,100,0
+protected_read,100,allow,100,0
+unrelated_write,100,allow,100,0

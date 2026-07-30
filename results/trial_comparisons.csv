@@ -1,0 +1,5 @@
+comparison,mean_overhead_percent,median_overhead_percent,bootstrap_mean_ci_low_percent,bootstrap_mean_ci_high_percent
+monitored_unrelated_write_vs_baseline_write,6.116366431145455,5.444190065021903,0.6494611352192357,11.98303509380104
+protected_read_vs_baseline_read,3.225167589887348,1.136839509997356,-2.762060688992468,9.348168578877948
+protected_authorized_write_vs_baseline_write,96.9814363676048,65.10846837459457,72.74120640384025,123.11794722717502
+protected_unauthorized_write_vs_baseline_write,-27.782143484675398,-33.34038422582303,-34.02939846613349,-21.199519803902003
