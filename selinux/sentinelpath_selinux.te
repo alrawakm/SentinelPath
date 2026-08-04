@@ -1,0 +1,29 @@
+policy_module(sentinelpath_selinux, 1.0.0)
+
+gen_require(`
+    role unconfined_r;
+    type unconfined_t;
+    type user_tmp_t;
+')
+
+type sentinelpath_test_t;
+type sentinelpath_test_exec_t;
+type sentinelpath_protected_t;
+files_type(sentinelpath_protected_t)
+role unconfined_r types sentinelpath_test_t;
+
+domain_type(sentinelpath_test_t)
+domain_entry_file(sentinelpath_test_t, sentinelpath_test_exec_t)
+domtrans_pattern(unconfined_t, sentinelpath_test_exec_t, sentinelpath_test_t)
+allow unconfined_t sentinelpath_protected_t:file relabelto;
+
+allow sentinelpath_test_t sentinelpath_protected_t:file {
+    getattr ioctl lock open read
+};
+
+manage_dirs_pattern(sentinelpath_test_t, user_tmp_t, user_tmp_t)
+manage_files_pattern(sentinelpath_test_t, user_tmp_t, user_tmp_t)
+manage_lnk_files_pattern(sentinelpath_test_t, user_tmp_t, user_tmp_t)
+
+userdom_use_user_terminals(sentinelpath_test_t)
+miscfiles_read_localization(sentinelpath_test_t)

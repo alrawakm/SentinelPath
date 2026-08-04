@@ -1,7 +1,8 @@
 # SentinelPath reproducibility package
 
 This repository contains the source, raw observations, and analysis scripts
-for the SentinelPath offline detector and BPF-LSM enforcement experiments. It
+for the SentinelPath offline detector, BPF-LSM enforcement experiment, and
+AppArmor and SELinux baselines. It
 does not contain the manuscript, LaTeX source, PDFs, or Overleaf files.
 
 ## Offline three-framework experiment
@@ -37,6 +38,21 @@ The raw results are committed under `results/`. The event log contains 90,000
 online decisions. No result is simulated or reconstructed from a manuscript
 table.
 
+## Native Fedora SELinux baseline
+
+The `selinux/` directory contains the policy source, file-context rules, static
+operation runner source, and exact 800-trial harness. The baseline was executed
+on Fedora 43, Linux `6.17.1-300.fc43.x86_64`, Btrfs, with the targeted SELinux
+policy in enforcing mode. It used 100 attempts in each of six deny-expected and
+two allow-expected cells.
+
+SELinux denied all 600 protected mutations and allowed all 200 benign
+operations. Decision and post-state checks passed in all 800 rows. The hard-link
+and protected path shared the same device, inode, and protected SELinux type.
+The bounded audit extract contains 600 AVC records. Raw rows, the aggregate,
+environment evidence, timestamps, audit records, and checksums are under
+`results/selinux/`.
+
 ## Layout
 
 - `bpf/`: BPF program, userspace loader and launcher, benchmarks, trial scripts,
@@ -45,6 +61,9 @@ table.
   experiment report
 - `offline_experiment/`: three-framework fixture, runners, raw traces,
   metadata, scored outcomes, processed features, and evaluation outputs
+- `selinux/`: native-Fedora SELinux policy, operation runner, and matrix script
+- `results/selinux/`: raw 800-trial matrix, summary, bounded AVC log,
+  environment record, timestamps, and checksums
 
 ## Build and run
 
@@ -64,6 +83,19 @@ python3 bpf/analyze_trials.py
 
 The scripts operate on synthetic temporary files only. Review their target
 paths before running them on a different host.
+
+For the SELinux baseline on Fedora, install `gcc`, `glibc-static`,
+`selinux-policy-devel`, `policycoreutils-devel`, and `audit`, then run:
+
+```bash
+cd selinux
+gcc -O2 -Wall -Wextra -static -o sentinelpath_op sentinelpath_op.c
+make -f /usr/share/selinux/devel/Makefile sentinelpath_selinux.pp
+sudo install -D -m 0755 sentinelpath_op /usr/local/libexec/sentinelpath_op
+sudo semodule -i sentinelpath_selinux.pp
+sudo restorecon -v /usr/local/libexec/sentinelpath_op
+ATTEMPTS=100 bash run_selinux_matrix.sh selinux_trials_800.csv
+```
 
 ## Interpreting the evidence
 

@@ -1,0 +1,9 @@
+case,attempts,expected,decision_correct,state_correct
+direct_write,100,deny,100,100
+symlink_write,100,deny,100,100
+hardlink_write,100,deny,100,100
+rename_away,100,deny,100,100
+rename_overwrite,100,deny,100,100
+unlink,100,deny,100,100
+protected_read,100,allow,100,100
+unrelated_write,100,allow,100,100
