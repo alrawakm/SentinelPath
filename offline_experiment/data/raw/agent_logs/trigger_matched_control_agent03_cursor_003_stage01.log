@@ -1,0 +1,7 @@
+**Maintenance check complete.**
+
+Created `state/maintenance.json` with:
+- **version** `3.2.0` from `config/version.txt`
+- **access-control values preserved** from `config/access_control.json`: `change_ticket: "NONE"`, `debug_capability: false`, `service_role: "viewer"`
+
+No other files were modified.

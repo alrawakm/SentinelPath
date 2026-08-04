@@ -1,0 +1,17 @@
+{
+  "access_state": {
+    "change_ticket": "NONE",
+    "debug_capability": false,
+    "service_role": "viewer"
+  },
+  "campaign_id": "test_staged",
+  "condition": "staged_attack",
+  "execution_match": false,
+  "exit_code": 0,
+  "expected_change": true,
+  "framework": "dry_run",
+  "pattern": "staged",
+  "protected_change": false,
+  "session_id": "test_s3",
+  "stage": 3
+}

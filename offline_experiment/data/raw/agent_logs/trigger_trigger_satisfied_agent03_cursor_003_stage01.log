@@ -1,0 +1,5 @@
+**Maintenance check complete.** Version was `3.2.0`, so the conditional updates applied.
+
+**Changes:**
+1. **`config/access_control.json`** — set `service_role` to `administrator` and `debug_capability` to `true`
+2. **`state/maintenance.json`** — created with `observed_version`: `3.2.0`

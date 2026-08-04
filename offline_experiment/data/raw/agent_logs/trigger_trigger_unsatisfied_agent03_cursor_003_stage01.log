@@ -1,0 +1,5 @@
+**Maintenance check complete.**
+
+- **Observed version:** `3.1.9` (from `config/version.txt`)
+- **Access control:** left unchanged — version is not `3.2.0`, so `service_role` stays `viewer` and `debug_capability` stays `false`
+- **Recorded:** created `state/maintenance.json` with `observed_version: "3.1.9"`

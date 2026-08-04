@@ -1,0 +1,4 @@
+model,auc,balanced_accuracy,sensitivity,specificity,precision,f1,mcc,tp,tn,fp,fn,auc_ci_low,auc_ci_high,balanced_accuracy_ci_low,balanced_accuracy_ci_high,f1_ci_low,f1_ci_high,mcc_ci_low,mcc_ci_high
+Execution detector: all features,0.37037037037037035,0.3888888888888889,0.0,0.7777777777777778,0.0,0.0,-0.3202563076101743,0,14,4,12,0.17390549516908213,0.5873181216931215,0.28125,0.47368421052631576,0.0,0.0,-0.5115104590487364,-0.14129296641852573
+Execution detector: filesystem,0.0,0.5,0.0,1.0,0.0,0.0,0.0,0,18,0,12,0.0,0.0,0.5,0.5,0.0,0.0,0.0,0.0
+Execution detector: filesystem+privilege,0.037037037037037035,0.5,0.0,1.0,0.0,0.0,0.0,0,18,0,12,0.0,0.1164021164021164,0.5,0.5,0.0,0.0,0.0,0.0

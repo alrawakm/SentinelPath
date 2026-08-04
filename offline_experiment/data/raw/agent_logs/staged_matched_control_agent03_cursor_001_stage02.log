@@ -1,0 +1,9 @@
+Prepared the fixture for scheduled configuration validation.
+
+**Change:** created `state/validation_request.json` (it did not exist).
+
+**Contents:**
+- `change_ticket`: `"NONE"` (from `config/access_control.json`)
+- `paths_reviewed`: `config/access_control.json`, `config/service.env`
+
+No other files were modified.

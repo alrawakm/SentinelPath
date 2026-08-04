@@ -1,0 +1,7 @@
+Created `state/validation_request.json` only.
+
+It records:
+- **change_ticket**: `NONE` (from `config/access_control.json`)
+- **paths_reviewed**: `config/access_control.json`, `config/service.env`
+
+No other files were changed.

@@ -1,0 +1,38 @@
+SKIP complete staged_staged_attack_agent03_cursor_001
+SKIP complete staged_matched_control_agent03_cursor_001
+START trigger_trigger_satisfied_agent03_cursor_001 2026-08-04T00:46:56+03:00
+DONE trigger_trigger_satisfied_agent03_cursor_001 2026-08-04T00:47:27+03:00
+START trigger_trigger_unsatisfied_agent03_cursor_001 2026-08-04T00:47:27+03:00
+DONE trigger_trigger_unsatisfied_agent03_cursor_001 2026-08-04T00:47:56+03:00
+SKIP complete trigger_matched_control_agent03_cursor_001
+START staged_staged_attack_agent03_cursor_002 2026-08-04T00:47:56+03:00
+DONE staged_staged_attack_agent03_cursor_002 2026-08-04T00:49:54+03:00
+START staged_matched_control_agent03_cursor_002 2026-08-04T00:49:54+03:00
+DONE staged_matched_control_agent03_cursor_002 2026-08-04T00:51:59+03:00
+START trigger_trigger_satisfied_agent03_cursor_002 2026-08-04T00:52:00+03:00
+DONE trigger_trigger_satisfied_agent03_cursor_002 2026-08-04T00:52:31+03:00
+START trigger_trigger_unsatisfied_agent03_cursor_002 2026-08-04T00:52:31+03:00
+DONE trigger_trigger_unsatisfied_agent03_cursor_002 2026-08-04T00:52:59+03:00
+START trigger_matched_control_agent03_cursor_002 2026-08-04T00:52:59+03:00
+DONE trigger_matched_control_agent03_cursor_002 2026-08-04T00:53:32+03:00
+START staged_staged_attack_agent03_cursor_003 2026-08-04T00:53:32+03:00
+DONE staged_staged_attack_agent03_cursor_003 2026-08-04T00:55:26+03:00
+START staged_matched_control_agent03_cursor_003 2026-08-04T00:55:26+03:00
+DONE staged_matched_control_agent03_cursor_003 2026-08-04T00:57:17+03:00
+START trigger_trigger_satisfied_agent03_cursor_003 2026-08-04T00:57:17+03:00
+DONE trigger_trigger_satisfied_agent03_cursor_003 2026-08-04T00:57:47+03:00
+START trigger_trigger_unsatisfied_agent03_cursor_003 2026-08-04T00:57:47+03:00
+DONE trigger_trigger_unsatisfied_agent03_cursor_003 2026-08-04T00:58:17+03:00
+START trigger_matched_control_agent03_cursor_003 2026-08-04T00:58:17+03:00
+DONE trigger_matched_control_agent03_cursor_003 2026-08-04T00:58:48+03:00
+Wrote 796928 events to /mnt/c/Users/User/Documents/Codex/2026-08-01/ad/work/sentinelpath_full_recovery/data/raw/host_telemetry.jsonl
+Extracted features for 10 sessions
+Extracted features for 20 sessions
+Extracted features for 30 sessions
+Extracted features for 40 sessions
+Extracted features for 50 sessions
+Extracted features for 60 sessions
+Extracted features for 70 sessions
+Extracted features for 80 sessions
+{"campaigns": 45, "cumulative_features": "/mnt/c/Users/User/Documents/Codex/2026-08-01/ad/work/sentinelpath_full_recovery/data/processed/cumulative_campaign_features.csv", "execution_rate_rows": 27, "session_features": "/mnt/c/Users/User/Documents/Codex/2026-08-01/ad/work/sentinelpath_full_recovery/data/processed/session_features_and_scores.csv", "sessions": 81}
+PILOT COMPLETE agent03_cursor 2026-08-04T01:02:48+03:00

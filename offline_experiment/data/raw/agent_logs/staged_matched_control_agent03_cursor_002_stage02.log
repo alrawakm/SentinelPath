@@ -1,0 +1,7 @@
+Created `state/validation_request.json` only.
+
+**Change:** Added the validation request with:
+- `change_ticket`: `"NONE"` (from current `config/access_control.json`)
+- `paths_reviewed`: `config/access_control.json`, `config/service.env`
+
+No other files were modified, including access-control values.

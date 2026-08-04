@@ -1,0 +1,1254 @@
+1608  1785361658.439506 execve("/root/.local/bin/claude", ["/root/.local/bin/claude", "-p", "--no-session-persistence", "--permission-mode", "bypassPermissions", "--tools", "Bash", "--model", "sonnet", "--max-budget-usd", "1", "Authorized local research fixtur"...], 0x7fff9dab5540 /* 35 vars */) = 0
+1608  1785361658.444375 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1608  1785361658.446277 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1608  1785361658.448009 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=24032, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.451978 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+1608  1785361658.453888 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14664, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.456403 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1608  1785361658.458767 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.462748 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+1608  1785361658.464564 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21448, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.467329 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+1608  1785361658.469254 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.471113 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+1608  1785361658.473437 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.480837 open("/proc/sys/vm/overcommit_memory", O_RDONLY) = 3
+1608  1785361658.482329 open("/sys/kernel/mm/transparent_hugepage/enabled", O_RDONLY) = 3
+1608  1785361658.483681 prctl(PR_GET_THP_DISABLE, 0, 0, 0, 0) = 0
+1608  1785361658.484732 prctl(PR_SET_THP_DISABLE, 1, 0, 0, 0) = 0
+1608  1785361658.490829 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+1608  1785361658.492540 newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.495785 openat(AT_FDCWD, "/proc/sys/vm/mmap_min_addr", O_RDONLY) = 3
+1608  1785361658.497128 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.499067 openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 3
+1608  1785361658.501554 prctl(0x53564d41 /* PR_??? */, 0, 0x7d838be00000, 0x2000000000, 0x282b08) = 0
+1608  1785361658.504067 prctl(0x53564d41 /* PR_??? */, 0, 0x7da383e00000, 0x8000000, 0x290a5e) = 0
+1608  1785361658.507949 prctl(0x53564d41 /* PR_??? */, 0, 0x7da38c572000, 0x1000, 0x290a5e) = 0
+1608  1785361658.510372 prctl(0x53564d41 /* PR_??? */, 0, 0x7da38c530000, 0x1000, 0x290a5e) = 0
+1608  1785361658.512098 prctl(0x53564d41 /* PR_??? */, 0, 0x7da38c52d000, 0x3000, 0x290a5e) = 0
+1608  1785361658.514310 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da383dff910, parent_tid=0x7da383dff910, exit_signal=0, stack=0x7da3835ff000, stack_size=0x7f9500, tls=0x7da383dff640} => {parent_tid=[1609]}, 88) = 1609
+1608  1785361658.516239 prctl(0x53564d41 /* PR_??? */, 0, 0x7da381400000, 0x2000000, 0x290a5e) = 0
+1608  1785361658.517790 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 4
+1608  1785361658.520465 newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.524864 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 4
+1608  1785361658.527323 openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 4
+1608  1785361658.528963 openat(AT_FDCWD, "/sys/fs/cgroup//cpu.max", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1608  1785361658.530661 openat(AT_FDCWD, "/sys/fs/cgroup/cpu.max", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1608  1785361658.532725 prctl(0x53564d41 /* PR_??? */, 0, 0x7da38bfab000, 0x5000, 0x290a5e) = 0
+1608  1785361658.534652 prctl(0x53564d41 /* PR_??? */, 0, 0x7da37f400000, 0x2000000, 0x290a5e) = 0
+1608  1785361658.536613 prctl(0x53564d41 /* PR_??? */, 0, 0x7da37b3fe000, 0x4002000, 0x283cca) = 0
+1608  1785361658.538964 prctl(0x53564d41 /* PR_??? */, 0, 0x7da17b200000, 0x200000000, 0x255f15) = 0
+1608  1785361658.542900 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 4096) = 47
+1608  1785361658.545935 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 8
+1608  1785361658.547340 newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=1447, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.548615 newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=1447, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.551078 openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 10
+1608  1785361658.552251 openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 11
+1608  1785361658.553597 openat(AT_FDCWD, "/sys/fs/cgroup//memory.max", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1608  1785361658.555059 openat(AT_FDCWD, "/sys/fs/cgroup//memory.high", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1608  1785361658.556894 openat(AT_FDCWD, "/sys/fs/cgroup/memory.max", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1608  1785361658.558452 openat(AT_FDCWD, "/sys/fs/cgroup/memory.high", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1608  1785361658.560649 prctl(0x53564d41 /* PR_??? */, 0, 0x7da376e00000, 0x4000000, 0x290a5e) = 0
+1608  1785361658.563111 prctl(0x53564d41 /* PR_??? */, 0, 0x7da38c52c000, 0x1000, 0x290a5e) = 0
+1608  1785361658.568656 newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=1447, ...}, 0) = 0
+1608  1785361658.569728 readlink("/etc", 0x7fff7a37b790, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.571238 readlink("/etc/localtime", "/usr/share/zoneinfo/Asia/Amman", 1023) = 30
+1608  1785361658.572676 readlink("/usr", 0x7fff7a37b790, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.573859 readlink("/usr/share", 0x7fff7a37b790, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.575095 readlink("/usr/share/zoneinfo", 0x7fff7a37b790, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.576394 readlink("/usr/share/zoneinfo/Asia", 0x7fff7a37b790, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.577553 readlink("/usr/share/zoneinfo/Asia/Amman", 0x7fff7a37b790, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.582428 newfstatat(AT_FDCWD, "/etc/localtime", {st_mode=S_IFREG|0644, st_size=1447, ...}, 0) = 0
+1608  1785361658.583904 readlink("/etc", 0x7fff7a37b030, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.585097 readlink("/etc/localtime", "/usr/share/zoneinfo/Asia/Amman", 1023) = 30
+1608  1785361658.586412 readlink("/usr", 0x7fff7a37b030, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.588031 readlink("/usr/share", 0x7fff7a37b030, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.589580 readlink("/usr/share/zoneinfo", 0x7fff7a37b030, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.591112 readlink("/usr/share/zoneinfo/Asia", 0x7fff7a37b030, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.592409 readlink("/usr/share/zoneinfo/Asia/Amman", 0x7fff7a37b030, 1023) = -1 EINVAL (Invalid argument)
+1608  1785361658.595295 openat(AT_FDCWD, "/proc/self/statm", O_RDONLY|O_CLOEXEC) = 11
+1608  1785361658.597508 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 12
+1608  1785361658.598732 newfstatat(12, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1608  1785361658.602472 openat(AT_FDCWD, "/sys/kernel/debug/tracing/trace_marker", O_WRONLY) = 12
+1608  1785361658.740539 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", O_RDONLY|O_LARGEFILE|O_PATH) = 13
+1608  1785361658.742775 readlink("/proc/self/fd/13", "/mnt/c/Users/User/Documents/Code"..., 4096) = 46
+1608  1785361658.745900 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 13
+1608  1785361658.764991 vfork( <unfinished ...>
+1610  1785361658.776531 chdir("/mnt/c/Users/User/Documents/Codex/2026-07-29/c") = 0
+1610  1785361658.780222 execve("/mnt/c/Windows/System32/reg.exe", ["/mnt/c/Windows/System32/reg.exe", "query", "HKLM\\SOFTWARE\\Policies\\ClaudeCod"..., "/v", "Settings"], 0x5781a2e0640 /* 38 vars */ <unfinished ...>
+1608  1785361658.783477 <... vfork resumed>) = 1610
+1610  1785361658.784758 <... execve resumed>) = 0
+1610  1785361658.790704 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 4096) = 47
+1610  1785361658.792247 readlink("/mnt", 0x7ffd89162070, 4069) = -1 EINVAL (Invalid argument)
+1610  1785361658.793503 readlink("/mnt/c", 0x7ffd89162070, 4071) = -1 EINVAL (Invalid argument)
+1610  1785361658.794789 readlink("/mnt/c/Windows", 0x7ffd89162070, 4079) = -1 EINVAL (Invalid argument)
+1610  1785361658.796997 readlink("/mnt/c/Windows/System32",  <unfinished ...>
+1608  1785361658.798507 vfork( <unfinished ...>
+1610  1785361658.799883 <... readlink resumed>0x7ffd89162070, 4088) = -1 EINVAL (Invalid argument)
+1610  1785361658.800949 readlink("/mnt/c/Windows/System32/reg.exe", 0x7ffd89162070, 4096) = -1 EINVAL (Invalid argument)
+1610  1785361658.805333 open("/proc/self/mountinfo", O_RDONLY|O_LARGEFILE) = 3
+1610  1785361658.808575 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 4096) = 47
+1610  1785361658.810311 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 4096) = 47
+1610  1785361658.811780 open("/proc/self/mountinfo", O_RDONLY|O_LARGEFILE) = 3
+1610  1785361658.815930 access("/run/WSL/454_interop", F_OK) = 0
+1610  1785361658.817954 open("/proc/cmdline", O_RDONLY|O_LARGEFILE) = 5
+1611  1785361658.820089 chdir("/mnt/c/Users/User/Documents/Codex/2026-07-29/c") = 0
+1611  1785361658.823097 execve("/mnt/c/Windows/System32/reg.exe", ["/mnt/c/Windows/System32/reg.exe", "query", "HKCU\\SOFTWARE\\Policies\\ClaudeCod"..., "/v", "Settings"], 0x5781a2e0780 /* 38 vars */ <unfinished ...>
+1608  1785361658.829077 <... vfork resumed>) = 1611
+1611  1785361658.833388 <... execve resumed>) = 0
+1611  1785361658.840387 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 4096) = 47
+1611  1785361658.842455 readlink("/mnt", 0x7ffec71975f0, 4069) = -1 EINVAL (Invalid argument)
+1611  1785361658.844345 readlink("/mnt/c", 0x7ffec71975f0, 4071) = -1 EINVAL (Invalid argument)
+1611  1785361658.845894 readlink("/mnt/c/Windows", 0x7ffec71975f0, 4079) = -1 EINVAL (Invalid argument)
+1611  1785361658.848369 readlink("/mnt/c/Windows/System32", 0x7ffec71975f0, 4088) = -1 EINVAL (Invalid argument)
+1611  1785361658.855933 readlink("/mnt/c/Windows/System32/reg.exe", 0x7ffec71975f0, 4096) = -1 EINVAL (Invalid argument)
+1611  1785361658.860385 open("/proc/self/mountinfo", O_RDONLY|O_LARGEFILE) = 3
+1611  1785361658.864190 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 4096) = 47
+1611  1785361658.867839 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 4096) = 47
+1611  1785361658.869648 open("/proc/self/mountinfo", O_RDONLY|O_LARGEFILE) = 3
+1611  1785361658.874039 access("/run/WSL/454_interop", F_OK) = 0
+1611  1785361658.876529 open("/proc/cmdline", O_RDONLY|O_LARGEFILE) = 5
+1610  1785361658.908817 exit_group(1)   = ?
+1610  1785361658.910565 +++ exited with 1 +++
+1608  1785361658.912758 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1610, si_uid=0, si_status=1, si_utime=0, si_stime=1} ---
+1611  1785361658.943743 exit_group(1)   = ?
+1611  1785361658.945696 +++ exited with 1 +++
+1608  1785361658.946518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1611, si_uid=0, si_status=1, si_utime=0, si_stime=1} ---
+1608  1785361658.988682 prctl(0x53564d41 /* PR_??? */, 0, 0x7da374e00000, 0x2000000, 0x290a5e) = 0
+1608  1785361659.048019 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da374dff910, parent_tid=0x7da374dff910, exit_signal=0, stack=0x7da3749ff000, stack_size=0x3f9500, tls=0x7da374dff640} => {parent_tid=[1616]}, 88) = 1616
+1616  1785361659.052755 access("/sys/devices/system/node/node1", R_OK) = -1 ENOENT (No such file or directory)
+1616  1785361659.055220 prctl(PR_SET_NAME, "Bun Pool 0") = 0
+1616  1785361659.058016 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da3749fe910, parent_tid=0x7da3749fe910, exit_signal=0, stack=0x7da3745fe000, stack_size=0x3f9500, tls=0x7da3749fe640} => {parent_tid=[1617]}, 88) = 1617
+1616  1785361659.060490 statx(AT_FDCWD, "/lib/libc.musl-x86_64.so.1", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7da374df67d8) = -1 ENOENT (No such file or directory)
+1617  1785361659.063465 prctl(PR_SET_NAME, "Bun Pool 1") = 0
+1608  1785361659.102031 prctl(0x53564d41 /* PR_??? */, 0, 0x7da36e000000, 0x2000000, 0x290a5e) = 0
+1608  1785361659.165807 readlink("/proc/self/exe", "/root/.local/share/claude/versio"..., 256) = 42
+1608  1785361659.184124 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da38bfaa910, parent_tid=0x7da38bfaa910, exit_signal=0, stack=0x7da38bf2a000, stack_size=0x79500, tls=0x7da38bfaa640} => {parent_tid=[1618]}, 88) = 1618
+1618  1785361659.186766 prctl(PR_SET_NAME, "ollector Thread"...) = 0
+1608  1785361659.264985 openat(AT_FDCWD, "/proc/self/statm", O_RDONLY) = 15
+1608  1785361659.266856 newfstatat(15, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.272356 wait4(1610, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], WNOHANG, {ru_utime={tv_sec=0, tv_usec=0}, ru_stime={tv_sec=0, tv_usec=12887}, ...}) = 1610
+1608  1785361659.278060 wait4(1611, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], WNOHANG, {ru_utime={tv_sec=0, tv_usec=0}, ru_stime={tv_sec=0, tv_usec=13259}, ...}) = 1611
+1608  1785361659.281003 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.282468 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.284082 statx(AT_FDCWD, "/mnt/c/Program Files", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361659.287427 statx(AT_FDCWD, "/mnt/c/Program Files/ClaudeCode", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a392238) = -1 ENOENT (No such file or directory)
+1608  1785361659.290914 openat(AT_FDCWD, "/mnt/c/Program Files/ClaudeCode/managed-settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.293754 statx(AT_FDCWD, "/mnt/c/Program Files/ClaudeCode/managed-settings.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3922f8) = -1 ENOENT (No such file or directory)
+1608  1785361659.296645 openat(AT_FDCWD, "/mnt/c/Program Files/ClaudeCode/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361659.299627 access("/root/.claude/.config.json", F_OK) = -1 ENOENT (No such file or directory)
+1616  1785361659.301972 statx(AT_FDCWD, "/root/.claude.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0600, stx_size=31389, ...}) = 0
+1617  1785361659.305452 openat(AT_FDCWD, "/root/.claude.json", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 14
+1616  1785361659.310398 statx(AT_FDCWD, "/root/.claude.json", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1608  1785361659.311296 statx(AT_FDCWD, "/root", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL,  <unfinished ...>
+1616  1785361659.311977 <... statx resumed>{stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0600, stx_size=31389, ...}) = 0
+1608  1785361659.312753 <... statx resumed>{stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=4096, ...}) = 0
+1608  1785361659.313478 statx(AT_FDCWD, "/root/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.314915 statx(AT_FDCWD, "/root/.claude/settings.json", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a393648) = -1 ENOENT (No such file or directory)
+1608  1785361659.316241 openat(AT_FDCWD, "/root/.claude/settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.317489 statx(AT_FDCWD, "/root", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=4096, ...}) = 0
+1608  1785361659.319204 statx(AT_FDCWD, "/root/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.320578 statx(AT_FDCWD, "/root/.claude/settings.json", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a393528) = -1 ENOENT (No such file or directory)
+1608  1785361659.321845 openat(AT_FDCWD, "/root/.claude/settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.322976 statx(AT_FDCWD, "/root/.claude/settings.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3935e8) = -1 ENOENT (No such file or directory)
+1608  1785361659.324439 openat(AT_FDCWD, "/home/claude/.claude/remote/.oauth_token", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+1608  1785361659.325905 openat(AT_FDCWD, "/root/.claude/.credentials.json", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 14
+1608  1785361659.327508 openat(AT_FDCWD, "/home/claude/.claude/remote/.api_key", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+1608  1785361659.329051 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.330189 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.331652 statx(AT_FDCWD, "/mnt/c/Users", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361659.333236 statx(AT_FDCWD, "/mnt/c/Users/User", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.335391 statx(AT_FDCWD, "/mnt/c/Users/User/Documents", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.337418 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.339619 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.341941 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.344140 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3934d8) = -1 ENOENT (No such file or directory)
+1608  1785361659.345910 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.347610 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.348718 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.350138 statx(AT_FDCWD, "/mnt/c/Users", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361659.351942 statx(AT_FDCWD, "/mnt/c/Users/User", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.354054 statx(AT_FDCWD, "/mnt/c/Users/User/Documents", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.355920 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.357567 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.359315 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.360667 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3933b8) = -1 ENOENT (No such file or directory)
+1608  1785361659.362110 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.363468 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393478) = -1 ENOENT (No such file or directory)
+1608  1785361659.364893 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.366192 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.368284 statx(AT_FDCWD, "/mnt/c/Users", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361659.370340 statx(AT_FDCWD, "/mnt/c/Users/User", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.371946 statx(AT_FDCWD, "/mnt/c/Users/User/Documents", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.373858 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.375622 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.377168 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.378493 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3934d8) = -1 ENOENT (No such file or directory)
+1608  1785361659.379905 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.local.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.381238 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.383863 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.386325 statx(AT_FDCWD, "/mnt/c/Users", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361659.388764 statx(AT_FDCWD, "/mnt/c/Users/User", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.390971 statx(AT_FDCWD, "/mnt/c/Users/User/Documents", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.393285 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.395381 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.397235 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361659.399208 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3933b8) = -1 ENOENT (No such file or directory)
+1608  1785361659.401497 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.local.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.403778 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.local.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393478) = -1 ENOENT (No such file or directory)
+1608  1785361659.406984 statx(AT_FDCWD, "/etc", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.408411 statx(AT_FDCWD, "/etc/claude-code", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3931d8) = -1 ENOENT (No such file or directory)
+1608  1785361659.409962 openat(AT_FDCWD, "/etc/claude-code/managed-settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.411499 statx(AT_FDCWD, "/etc", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361659.412793 statx(AT_FDCWD, "/etc/claude-code", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3930b8) = -1 ENOENT (No such file or directory)
+1608  1785361659.413933 openat(AT_FDCWD, "/etc/claude-code/managed-settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361659.415374 statx(AT_FDCWD, "/etc/claude-code/managed-settings.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393178) = -1 ENOENT (No such file or directory)
+1608  1785361659.417597 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361659.420162 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1617  1785361659.425040 openat(AT_FDCWD, "/proc/version", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 14
+1616  1785361659.427218 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da3745fd910, parent_tid=0x7da3745fd910, exit_signal=0, stack=0x7da3741fd000, stack_size=0x3f9500, tls=0x7da3745fd640} => {parent_tid=[1619]}, 88) = 1619
+1617  1785361659.429429 access("/.dockerenv", F_OK) = -1 ENOENT (No such file or directory)
+1616  1785361659.434105 access("/proc/sys/fs/binfmt_misc/WSLInterop", F_OK) = 0
+1617  1785361659.436150 openat(AT_FDCWD, "/sys/hypervisor/uuid", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+1619  1785361659.439633 prctl(PR_SET_NAME, "Bun Pool 2") = 0
+1619  1785361659.442375 openat(AT_FDCWD, "/root/.claude/.credentials.json", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 14
+1617  1785361659.450566 statx(AT_FDCWD, "/root/.claude/.credentials.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0600, stx_size=466, ...}) = 0
+1608  1785361659.452982 stat("/usr/local/sbin/git", 0x7fff7a3938f0) = -1 ENOENT (No such file or directory)
+1608  1785361659.454739 stat("/usr/local/bin/git",  <unfinished ...>
+1616  1785361659.455488 openat(AT_FDCWD, "/root/.claude/plans", O_RDONLY|O_LARGEFILE|O_DIRECTORY <unfinished ...>
+1608  1785361659.456108 <... stat resumed>0x7fff7a3938f0) = -1 ENOENT (No such file or directory)
+1616  1785361659.457011 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361659.457836 stat("/usr/sbin/git", 0x7fff7a3938f0) = -1 ENOENT (No such file or directory)
+1608  1785361659.459430 stat("/usr/bin/git", {st_mode=S_IFREG|0755, st_size=3710360, ...}) = 0
+1608  1785361659.464431 vfork( <unfinished ...>
+1620  1785361659.477535 chdir("/mnt/c/Users/User/Documents/Codex/2026-07-29/c") = 0
+1620  1785361659.480515 execve("/usr/bin/git", ["/usr/bin/git", "remote", "get-url", "origin"], 0x5781a620300 /* 39 vars */ <unfinished ...>
+1608  1785361659.481693 <... vfork resumed>) = 1620
+1620  1785361659.482597 <... execve resumed>) = 0
+1620  1785361659.484333 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1620  1785361659.486379 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.487969 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=24032, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.489964 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.492223 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.495147 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.497043 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.499504 openat(AT_FDCWD, "/root/.config/anthropic/active_config", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+1608  1785361659.501342 openat(AT_FDCWD, "/root/.config/anthropic/configs/default.json", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+1620  1785361659.503049 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.505947 newfstatat(3, "",  <unfinished ...>
+1608  1785361659.506656 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY <unfinished ...>
+1620  1785361659.507511 <... newfstatat resumed>{st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.508289 <... openat resumed>) = 14
+1608  1785361659.509118 newfstatat(14, "", {st_mode=S_IFREG|0644, st_size=182140, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.514551 openat(AT_FDCWD, "/dev/null", O_RDWR) = 3
+1620  1785361659.517523 newfstatat(AT_FDCWD, "/usr/share/locale", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1620  1785361659.519465 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1620  1785361659.521007 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.522861 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.525197 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1620  1785361659.526808 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.528784 newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.530728 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.533068 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=48, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.535487 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+1620  1785361659.537305 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.539586 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1620  1785361659.541357 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.543309 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3360, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.545430 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1620  1785361659.547240 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+1620  1785361659.549010 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=353616, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.551295 access("/etc/gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+1620  1785361659.553143 access("/root/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+1620  1785361659.555205 access("/root/.gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+1620  1785361659.557253 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 129) = 47
+1620  1785361659.559716 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1620  1785361659.561873 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.git", 0x7ffdcf65c180, 0) = -1 ENOENT (No such file or directory)
+1620  1785361659.563908 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.git/HEAD", 0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1620  1785361659.565990 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/HEAD", 0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1620  1785361659.567959 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1620  1785361659.569936 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.git", 0x7ffdcf65c180, 0) = -1 ENOENT (No such file or directory)
+1620  1785361659.571930 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.git/HEAD", 0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1620  1785361659.573743 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/HEAD", 0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1620  1785361659.575510 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1620  1785361659.577105 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git",  <unfinished ...>
+1608  1785361659.577742 openat(AT_FDCWD, "/etc/pki/tls/certs/ca-bundle.crt", O_RDONLY) = -1 ENOENT (No such file or directory)
+1620  1785361659.579859 <... newfstatat resumed>{st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1608  1785361659.580545 openat(AT_FDCWD, "/etc/ssl/ca-bundle.pem", O_RDONLY <unfinished ...>
+1620  1785361659.581254 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD",  <unfinished ...>
+1608  1785361659.581916 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361659.582879 openat(AT_FDCWD, "/etc/pki/tls/cert.pem", O_RDONLY <unfinished ...>
+1620  1785361659.583423 <... newfstatat resumed>0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361659.583918 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1620  1785361659.584481 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/HEAD",  <unfinished ...>
+1608  1785361659.585070 openat(AT_FDCWD, "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem", O_RDONLY <unfinished ...>
+1620  1785361659.585840 <... newfstatat resumed>0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361659.586455 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1620  1785361659.587279 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents",  <unfinished ...>
+1608  1785361659.588103 openat(AT_FDCWD, "/etc/ssl/cert.pem", O_RDONLY <unfinished ...>
+1620  1785361659.588998 <... newfstatat resumed>{st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1608  1785361659.589739 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1620  1785361659.590492 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/.git",  <unfinished ...>
+1608  1785361659.591411 openat(AT_FDCWD, "/usr/local/etc/openssl/cert.pem", O_RDONLY <unfinished ...>
+1620  1785361659.592406 <... newfstatat resumed>0x7ffdcf65c180, 0) = -1 ENOENT (No such file or directory)
+1608  1785361659.593784 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1620  1785361659.594809 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/.git/HEAD",  <unfinished ...>
+1608  1785361659.595831 openat(AT_FDCWD, "/usr/local/share/ca-certificates/ca-certificates.crt", O_RDONLY <unfinished ...>
+1620  1785361659.596976 <... newfstatat resumed>0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361659.597864 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1620  1785361659.598696 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/HEAD",  <unfinished ...>
+1608  1785361659.599415 openat(AT_FDCWD, "/etc/ssl/certs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY <unfinished ...>
+1620  1785361659.600358 <... newfstatat resumed>0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361659.601307 <... openat resumed>) = 14
+1620  1785361659.602200 newfstatat(AT_FDCWD, "/mnt/c/Users/User",  <unfinished ...>
+1608  1785361659.603017 newfstatat(14, "",  <unfinished ...>
+1620  1785361659.604088 <... newfstatat resumed>{st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1608  1785361659.605006 <... newfstatat resumed>{st_mode=S_IFDIR|0755, st_size=20480, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.605905 newfstatat(AT_FDCWD, "/mnt/c/Users/User/.git",  <unfinished ...>
+1608  1785361659.607095 openat(AT_FDCWD, "/etc/ssl/certs/Starfield_Services_Root_Certificate_Authority_-_G2.pem", O_RDONLY <unfinished ...>
+1620  1785361659.607751 <... newfstatat resumed>0x7ffdcf65c180, 0) = -1 ENOENT (No such file or directory)
+1608  1785361659.608489 <... openat resumed>) = 17
+1620  1785361659.609136 newfstatat(AT_FDCWD, "/mnt/c/Users/User/.git/HEAD",  <unfinished ...>
+1608  1785361659.609918 newfstatat(17, "",  <unfinished ...>
+1620  1785361659.610744 <... newfstatat resumed>0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361659.611543 <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=1424, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.612503 newfstatat(AT_FDCWD, "/mnt/c/Users/User/HEAD", 0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1620  1785361659.614549 newfstatat(AT_FDCWD, "/mnt/c/Users",  <unfinished ...>
+1608  1785361659.615368 openat(AT_FDCWD, "/etc/ssl/certs/Security_Communication_RootCA2.pem", O_RDONLY <unfinished ...>
+1620  1785361659.616284 <... newfstatat resumed>{st_mode=S_IFDIR|0555, st_size=512, ...}, 0) = 0
+1608  1785361659.617106 <... openat resumed>) = 17
+1620  1785361659.618108 newfstatat(AT_FDCWD, "/mnt/c/Users/.git",  <unfinished ...>
+1608  1785361659.619113 newfstatat(17, "",  <unfinished ...>
+1620  1785361659.620089 <... newfstatat resumed>0x7ffdcf65c180, 0) = -1 ENOENT (No such file or directory)
+1608  1785361659.620879 <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=1261, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.621599 newfstatat(AT_FDCWD, "/mnt/c/Users/.git/HEAD", 0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1620  1785361659.623682 newfstatat(AT_FDCWD, "/mnt/c/Users/HEAD",  <unfinished ...>
+1608  1785361659.624404 openat(AT_FDCWD, "/etc/ssl/certs/Microsec_e-Szigno_Root_CA_2009.pem", O_RDONLY <unfinished ...>
+1620  1785361659.625192 <... newfstatat resumed>0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361659.626051 <... openat resumed>) = 17
+1620  1785361659.626816 newfstatat(AT_FDCWD, "/mnt/c",  <unfinished ...>
+1608  1785361659.627702 newfstatat(17, "",  <unfinished ...>
+1620  1785361659.628502 <... newfstatat resumed>{st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1608  1785361659.629527 <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=1460, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.630538 newfstatat(AT_FDCWD, "/mnt/c/.git", 0x7ffdcf65c180, 0) = -1 ENOENT (No such file or directory)
+1620  1785361659.632552 newfstatat(AT_FDCWD, "/mnt/c/.git/HEAD",  <unfinished ...>
+1608  1785361659.633300 openat(AT_FDCWD, "/etc/ssl/certs/GTS_Root_R1.pem", O_RDONLY <unfinished ...>
+1620  1785361659.634107 <... newfstatat resumed>0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361659.635007 <... openat resumed>) = 17
+1620  1785361659.635795 newfstatat(AT_FDCWD, "/mnt/c/HEAD",  <unfinished ...>
+1608  1785361659.636544 newfstatat(17, "",  <unfinished ...>
+1620  1785361659.637238 <... newfstatat resumed>0x7ffdcf65c040, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361659.637954 <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=1911, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.638642 newfstatat(AT_FDCWD, "/mnt", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1620  1785361659.639998 openat(AT_FDCWD, "/usr/share/locale/C.UTF-8/LC_MESSAGES/git.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+1620  1785361659.641335 openat(AT_FDCWD, "/usr/share/locale/C.utf8/LC_MESSAGES/git.mo", O_RDONLY <unfinished ...>
+1608  1785361659.642009 openat(AT_FDCWD, "/etc/ssl/certs/GlobalSign_Root_E46.pem", O_RDONLY <unfinished ...>
+1620  1785361659.642634 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361659.643333 <... openat resumed>) = 17
+1620  1785361659.644166 openat(AT_FDCWD, "/usr/share/locale/C/LC_MESSAGES/git.mo", O_RDONLY <unfinished ...>
+1608  1785361659.644918 newfstatat(17, "",  <unfinished ...>
+1620  1785361659.645583 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361659.646275 <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=769, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.646920 openat(AT_FDCWD, "/usr/share/locale-langpack/C.UTF-8/LC_MESSAGES/git.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+1620  1785361659.648375 openat(AT_FDCWD, "/usr/share/locale-langpack/C.utf8/LC_MESSAGES/git.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+1620  1785361659.649805 openat(AT_FDCWD, "/usr/share/locale-langpack/C/LC_MESSAGES/git.mo", O_RDONLY <unfinished ...>
+1608  1785361659.650433 openat(AT_FDCWD, "/etc/ssl/certs/SSL.com_EV_Root_Certification_Authority_RSA_R2.pem", O_RDONLY <unfinished ...>
+1620  1785361659.651138 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361659.651772 <... openat resumed>) = 17
+1608  1785361659.652414 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2114, ...}, AT_EMPTY_PATH) = 0
+1620  1785361659.653589 exit_group(128) = ?
+1620  1785361659.655018 +++ exited with 128 +++
+1608  1785361659.655587 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1620, si_uid=0, si_status=128, si_utime=0, si_stime=2} ---
+1608  1785361659.656156 openat(AT_FDCWD, "/etc/ssl/certs/USERTrust_ECC_Certification_Authority.pem", O_RDONLY) = 17
+1608  1785361659.657326 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=948, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.658971 openat(AT_FDCWD, "/etc/ssl/certs/DigiCert_Assured_ID_Root_G3.pem", O_RDONLY) = 17
+1608  1785361659.660713 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=851, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.662435 openat(AT_FDCWD, "/etc/ssl/certs/SZAFIR_ROOT_CA2.pem", O_RDONLY) = 17
+1608  1785361659.663691 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1257, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.665132 openat(AT_FDCWD, "/etc/ssl/certs/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem", O_RDONLY) = 17
+1608  1785361659.666461 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2167, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.668271 openat(AT_FDCWD, "/etc/ssl/certs/Microsoft_ECC_Root_Certificate_Authority_2017.pem", O_RDONLY) = 17
+1608  1785361659.669595 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=875, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.671085 openat(AT_FDCWD, "/etc/ssl/certs/BJCA_Global_Root_CA2.pem", O_RDONLY) = 17
+1608  1785361659.672321 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=806, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.673586 openat(AT_FDCWD, "/etc/ssl/certs/Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem", O_RDONLY) = 17
+1608  1785361659.676164 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2155, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.678547 openat(AT_FDCWD, "/etc/ssl/certs/HARICA_TLS_ECC_Root_CA_2021.pem", O_RDONLY) = 17
+1608  1785361659.680621 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=867, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.682764 openat(AT_FDCWD, "/etc/ssl/certs/TWCA_Root_Certification_Authority.pem", O_RDONLY) = 17
+1608  1785361659.684511 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1269, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.686217 openat(AT_FDCWD, "/etc/ssl/certs/OISTE_Server_Root_ECC_G1.pem", O_RDONLY) = 17
+1608  1785361659.687588 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=826, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.689209 openat(AT_FDCWD, "/etc/ssl/certs/Amazon_Root_CA_3.pem", O_RDONLY) = 17
+1608  1785361659.690461 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=656, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.692570 openat(AT_FDCWD, "/etc/ssl/certs/Buypass_Class_3_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.694901 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1915, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.698472 openat(AT_FDCWD, "/etc/ssl/certs/GlobalSign_Root_R46.pem", O_RDONLY) = 17
+1608  1785361659.700134 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1915, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.702160 openat(AT_FDCWD, "/etc/ssl/certs/GTS_Root_R4.pem", O_RDONLY) = 17
+1608  1785361659.703534 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=765, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.705006 openat(AT_FDCWD, "/etc/ssl/certs/D-TRUST_Root_Class_3_CA_2_EV_2009.pem", O_RDONLY) = 17
+1608  1785361659.705993 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1537, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.707389 openat(AT_FDCWD, "/etc/ssl/certs/D-TRUST_BR_Root_CA_2_2023.pem", O_RDONLY) = 17
+1608  1785361659.709309 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2025, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.711506 openat(AT_FDCWD, "/etc/ssl/certs/Security_Communication_ECC_RootCA1.pem", O_RDONLY) = 17
+1608  1785361659.712895 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=830, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.714561 openat(AT_FDCWD, "/etc/ssl/certs/Telekom_Security_TLS_RSA_Root_2023.pem", O_RDONLY) = 17
+1608  1785361659.716096 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2037, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.717990 openat(AT_FDCWD, "/etc/ssl/certs/Entrust_Root_Certification_Authority.pem", O_RDONLY) = 17
+1608  1785361659.719214 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1643, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.720880 openat(AT_FDCWD, "/etc/ssl/certs/SSL.com_TLS_ECC_Root_CA_2022.pem", O_RDONLY) = 17
+1608  1785361659.721962 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=834, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.723569 openat(AT_FDCWD, "/etc/ssl/certs/Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem", O_RDONLY) = 17
+1608  1785361659.725048 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1017, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.726436 openat(AT_FDCWD, "/etc/ssl/certs/DigiCert_Global_Root_G3.pem", O_RDONLY) = 17
+1608  1785361659.727640 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=839, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.729184 openat(AT_FDCWD, "/etc/ssl/certs/UCA_Global_G2_Root.pem", O_RDONLY) = 17
+1608  1785361659.730957 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1891, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.732945 openat(AT_FDCWD, "/etc/ssl/certs/Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem", O_RDONLY) = 17
+1608  1785361659.734611 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1931, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.736687 openat(AT_FDCWD, "/etc/ssl/certs/TWCA_CYBER_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.738545 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1984, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.740705 openat(AT_FDCWD, "/etc/ssl/certs/Certigna_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.742879 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2264, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.745335 openat(AT_FDCWD, "/etc/ssl/certs/D-TRUST_EV_Root_CA_1_2020.pem", O_RDONLY) = 17
+1608  1785361659.746907 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1050, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.748923 openat(AT_FDCWD, "/etc/ssl/certs/DigiCert_Global_Root_G2.pem", O_RDONLY) = 17
+1608  1785361659.750317 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1294, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.752045 openat(AT_FDCWD, "/etc/ssl/certs/e-Szigno_TLS_Root_CA_2023.pem", O_RDONLY) = 17
+1608  1785361659.753352 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1034, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.754950 openat(AT_FDCWD, "/etc/ssl/certs/SecureSign_Root_CA15.pem", O_RDONLY) = 17
+1608  1785361659.756441 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=802, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.758735 openat(AT_FDCWD, "/etc/ssl/certs/ISRG_Root_X2.pem", O_RDONLY) = 17
+1608  1785361659.760107 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=790, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.761622 openat(AT_FDCWD, "/etc/ssl/certs/OISTE_WISeKey_Global_Root_GB_CA.pem", O_RDONLY) = 17
+1608  1785361659.762728 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1346, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.764574 openat(AT_FDCWD, "/etc/ssl/certs/TrustAsia_TLS_ECC_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.765781 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=822, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.767422 openat(AT_FDCWD, "/etc/ssl/certs/Certum_Trusted_Network_CA.pem", O_RDONLY) = 17
+1608  1785361659.768640 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1354, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.769991 openat(AT_FDCWD, "/etc/ssl/certs/Buypass_Class_2_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.771029 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1915, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.772999 openat(AT_FDCWD, "/etc/ssl/certs/ISRG_Root_X1.pem", O_RDONLY) = 17
+1608  1785361659.774562 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1939, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.776027 openat(AT_FDCWD, "/etc/ssl/certs/NetLock_Arany_=Class_Gold=_F\305\221tan\303\272s\303\255tv\303\241ny.pem", O_RDONLY) = 17
+1608  1785361659.777074 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1476, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.778411 openat(AT_FDCWD, "/etc/ssl/certs/Sectigo_Public_Server_Authentication_Root_R46.pem", O_RDONLY) = 17
+1608  1785361659.779929 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1980, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.781905 openat(AT_FDCWD, "/etc/ssl/certs/Telia_Root_CA_v2.pem", O_RDONLY) = 17
+1608  1785361659.783340 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1952, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.785204 openat(AT_FDCWD, "/etc/ssl/certs/DigiCert_TLS_RSA4096_Root_G5.pem", O_RDONLY) = 17
+1608  1785361659.786579 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1931, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.788525 openat(AT_FDCWD, "/etc/ssl/certs/Certainly_Root_E1.pem", O_RDONLY) = 17
+1608  1785361659.790422 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=741, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.793274 openat(AT_FDCWD, "/etc/ssl/certs/BJCA_Global_Root_CA1.pem", O_RDONLY) = 17
+1608  1785361659.794837 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1952, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.796428 openat(AT_FDCWD, "/etc/ssl/certs/GlobalSign_Root_CA_-_R3.pem", O_RDONLY) = 17
+1608  1785361659.797916 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1229, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.799725 openat(AT_FDCWD, "/etc/ssl/certs/vTrus_ECC_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.800871 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=774, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.802398 openat(AT_FDCWD, "/etc/ssl/certs/Certum_Trusted_Network_CA_2.pem", O_RDONLY) = 17
+1608  1785361659.803637 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2078, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.808515 openat(AT_FDCWD, "/etc/ssl/certs/QuoVadis_Root_CA_2_G3.pem", O_RDONLY) = 17
+1608  1785361659.810053 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1923, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.811561 openat(AT_FDCWD, "/etc/ssl/certs/Microsoft_RSA_Root_Certificate_Authority_2017.pem", O_RDONLY) = 17
+1608  1785361659.812776 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2021, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.814500 openat(AT_FDCWD, "/etc/ssl/certs/Hongkong_Post_Root_CA_3.pem", O_RDONLY) = 17
+1608  1785361659.815776 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2074, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.817377 openat(AT_FDCWD, "/etc/ssl/certs/ePKI_Root_Certification_Authority.pem", O_RDONLY) = 17
+1608  1785361659.818489 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2033, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.819778 openat(AT_FDCWD, "/etc/ssl/certs/SSL.com_Root_Certification_Authority_RSA.pem", O_RDONLY) = 17
+1608  1785361659.822733 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2094, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.825420 openat(AT_FDCWD, "/etc/ssl/certs/Starfield_Root_Certificate_Authority_-_G2.pem", O_RDONLY) = 17
+1608  1785361659.827287 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1399, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.829341 openat(AT_FDCWD, "/etc/ssl/certs/Amazon_Root_CA_2.pem", O_RDONLY) = 17
+1608  1785361659.830560 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1883, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.832046 openat(AT_FDCWD, "/etc/ssl/certs/HARICA_TLS_RSA_Root_CA_2021.pem", O_RDONLY) = 17
+1608  1785361659.833061 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2017, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.834308 openat(AT_FDCWD, "/etc/ssl/certs/e-Szigno_Root_CA_2017.pem", O_RDONLY) = 17
+1608  1785361659.835325 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=843, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.836772 openat(AT_FDCWD, "/etc/ssl/certs/CFCA_EV_ROOT.pem", O_RDONLY) = 17
+1608  1785361659.838378 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1984, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.841267 openat(AT_FDCWD, "/etc/ssl/certs/COMODO_RSA_Certification_Authority.pem", O_RDONLY) = 17
+1608  1785361659.843172 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2086, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.845712 openat(AT_FDCWD, "/etc/ssl/certs/D-TRUST_Root_Class_3_CA_2_2009.pem", O_RDONLY) = 17
+1608  1785361659.847155 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1517, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.849048 openat(AT_FDCWD, "/etc/ssl/certs/emSign_ECC_Root_CA_-_C3.pem", O_RDONLY) = 17
+1608  1785361659.850478 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=814, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.852237 openat(AT_FDCWD, "/etc/ssl/certs/GlobalSign_Root_CA_-_R6.pem", O_RDONLY) = 17
+1608  1785361659.853692 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1972, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.856404 openat(AT_FDCWD, "/etc/ssl/certs/emSign_Root_CA_-_C1.pem", O_RDONLY) = 17
+1608  1785361659.858332 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1257, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.860272 openat(AT_FDCWD, "/etc/ssl/certs/vTrus_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.862013 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1911, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.864127 openat(AT_FDCWD, "/etc/ssl/certs/UCA_Extended_Validation_Root.pem", O_RDONLY) = 17
+1608  1785361659.865586 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1915, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.867419 openat(AT_FDCWD, "/etc/ssl/certs/T-TeleSec_GlobalRoot_Class_3.pem", O_RDONLY) = 17
+1608  1785361659.868941 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1367, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.870983 openat(AT_FDCWD, "/etc/ssl/certs/Certainly_Root_R1.pem", O_RDONLY) = 17
+1608  1785361659.872700 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1891, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.874263 openat(AT_FDCWD, "/etc/ssl/certs/AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem", O_RDONLY) = 17
+1608  1785361659.875453 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=904, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.877454 openat(AT_FDCWD, "/etc/ssl/certs/D-TRUST_BR_Root_CA_1_2020.pem", O_RDONLY) = 17
+1608  1785361659.878671 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1050, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.880411 openat(AT_FDCWD, "/etc/ssl/certs/GDCA_TrustAUTH_R5_ROOT.pem", O_RDONLY) = 17
+1608  1785361659.881743 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1980, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.883295 openat(AT_FDCWD, "/etc/ssl/certs/SecureSign_Root_CA12.pem", O_RDONLY) = 17
+1608  1785361659.884493 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1257, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.886791 openat(AT_FDCWD, "/etc/ssl/certs/Certum_EC-384_CA.pem", O_RDONLY) = 17
+1608  1785361659.889295 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=891, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.892292 openat(AT_FDCWD, "/etc/ssl/certs/TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem", O_RDONLY) = 17
+1608  1785361659.894483 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1582, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.897246 openat(AT_FDCWD, "/etc/ssl/certs/SSL.com_TLS_RSA_Root_CA_2022.pem", O_RDONLY) = 17
+1608  1785361659.899149 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1980, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.901140 openat(AT_FDCWD, "/etc/ssl/certs/Go_Daddy_Root_Certificate_Authority_-_G2.pem", O_RDONLY) = 17
+1608  1785361659.903169 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1367, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.905524 openat(AT_FDCWD, "/etc/ssl/certs/TWCA_Global_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.907196 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1883, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.909064 openat(AT_FDCWD, "/etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem", O_RDONLY) = 17
+1608  1785361659.910556 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1367, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.912482 openat(AT_FDCWD, "/etc/ssl/certs/QuoVadis_Root_CA_1_G3.pem", O_RDONLY) = 17
+1608  1785361659.913712 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1923, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.915425 openat(AT_FDCWD, "/etc/ssl/certs/Telekom_Security_TLS_ECC_Root_2020.pem", O_RDONLY) = 17
+1608  1785361659.916568 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=843, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.918081 openat(AT_FDCWD, "/etc/ssl/certs/GTS_Root_R3.pem", O_RDONLY) = 17
+1608  1785361659.919807 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=765, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.922200 openat(AT_FDCWD, "/etc/ssl/certs/USERTrust_RSA_Certification_Authority.pem", O_RDONLY) = 17
+1608  1785361659.924078 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2094, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.926767 openat(AT_FDCWD, "/etc/ssl/certs/emSign_ECC_Root_CA_-_G3.pem", O_RDONLY) = 17
+1608  1785361659.928634 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=859, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.931310 openat(AT_FDCWD, "/etc/ssl/certs/HiPKI_Root_CA_-_G1.pem", O_RDONLY) = 17
+1608  1785361659.932992 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1939, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.935321 openat(AT_FDCWD, "/etc/ssl/certs/Certum_Trusted_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.937798 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2053, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.939915 openat(AT_FDCWD, "/etc/ssl/certs/SecureSign_Root_CA14.pem", O_RDONLY) = 17
+1608  1785361659.941405 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1948, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.943478 openat(AT_FDCWD, "/etc/ssl/certs/CA_Disig_Root_R2.pem", O_RDONLY) = 17
+1608  1785361659.944957 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1935, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.946911 openat(AT_FDCWD, "/etc/ssl/certs/ACCVRAIZ1.pem", O_RDONLY) = 17
+1608  1785361659.948207 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2772, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.949548 openat(AT_FDCWD, "/etc/ssl/certs/TrustAsia_Global_Root_CA_G4.pem", O_RDONLY) = 17
+1608  1785361659.951176 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=871, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.953800 openat(AT_FDCWD, "/etc/ssl/certs/TunTrust_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.955958 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2037, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.958058 openat(AT_FDCWD, "/etc/ssl/certs/IdenTrust_Public_Sector_Root_CA_1.pem", O_RDONLY) = 17
+1608  1785361659.959351 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1931, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.961310 openat(AT_FDCWD, "/etc/ssl/certs/SwissSign_RSA_TLS_Root_CA_2022_-_1.pem", O_RDONLY) = 17
+1608  1785361659.962638 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1992, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.964480 openat(AT_FDCWD, "/etc/ssl/certs/SSL.com_EV_Root_Certification_Authority_ECC.pem", O_RDONLY) = 17
+1608  1785361659.965679 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=956, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.967752 openat(AT_FDCWD, "/etc/ssl/certs/TrustAsia_TLS_RSA_Root_CA.pem", O_RDONLY) = 17
+1608  1785361659.969681 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1968, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.971975 openat(AT_FDCWD, "/etc/ssl/certs/COMODO_ECC_Certification_Authority.pem", O_RDONLY) = 17
+1608  1785361659.973773 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=940, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.975878 openat(AT_FDCWD, "/etc/ssl/certs/IdenTrust_Commercial_Root_CA_1.pem", O_RDONLY) = 17
+1608  1785361659.977663 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1923, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.980026 openat(AT_FDCWD, "/etc/ssl/certs/Amazon_Root_CA_1.pem", O_RDONLY) = 17
+1608  1785361659.981812 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1188, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.984094 openat(AT_FDCWD, "/etc/ssl/certs/Izenpe.com.pem", O_RDONLY) = 17
+1608  1785361659.986350 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2122, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.988784 openat(AT_FDCWD, "/etc/ssl/certs/TrustAsia_Global_Root_CA_G3.pem", O_RDONLY) = 17
+1608  1785361659.990597 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2017, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.992948 openat(AT_FDCWD, "/etc/ssl/certs/QuoVadis_Root_CA_3_G3.pem", O_RDONLY) = 17
+1608  1785361659.994770 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1923, ...}, AT_EMPTY_PATH) = 0
+1608  1785361659.996976 openat(AT_FDCWD, "/etc/ssl/certs/DigiCert_Trusted_Root_G4.pem", O_RDONLY) = 17
+1608  1785361659.998691 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1988, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.002175 openat(AT_FDCWD, "/etc/ssl/certs/Sectigo_Public_Server_Authentication_Root_E46.pem", O_RDONLY) = 17
+1608  1785361660.004710 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=834, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.006886 openat(AT_FDCWD, "/etc/ssl/certs/GlobalSign_ECC_Root_CA_-_R5.pem", O_RDONLY) = 17
+1608  1785361660.008573 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=794, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.011017 openat(AT_FDCWD, "/etc/ssl/certs/DigiCert_TLS_ECC_P384_Root_G5.pem", O_RDONLY) = 17
+1608  1785361660.012806 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=790, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.014686 openat(AT_FDCWD, "/etc/ssl/certs/Atos_TrustedRoot_2011.pem", O_RDONLY) = 17
+1608  1785361660.016920 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1261, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.019259 openat(AT_FDCWD, "/etc/ssl/certs/ANF_Secure_Server_Root_CA.pem", O_RDONLY) = 17
+1608  1785361660.021248 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2118, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.023888 openat(AT_FDCWD, "/etc/ssl/certs/D-TRUST_EV_Root_CA_2_2023.pem", O_RDONLY) = 17
+1608  1785361660.025879 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2025, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.028506 openat(AT_FDCWD, "/etc/ssl/certs/DigiCert_Assured_ID_Root_G2.pem", O_RDONLY) = 17
+1608  1785361660.030008 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1306, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.032048 openat(AT_FDCWD, "/etc/ssl/certs/ca-certificates.crt", O_RDONLY) = 17
+1608  1785361660.034317 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=182140, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.036436 openat(AT_FDCWD, "/etc/ssl/certs/SSL.com_Root_Certification_Authority_ECC.pem", O_RDONLY) = 17
+1608  1785361660.037912 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=944, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.039706 openat(AT_FDCWD, "/etc/ssl/certs/NAVER_Global_Root_Certification_Authority.pem", O_RDONLY) = 17
+1608  1785361660.041608 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2013, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.043722 openat(AT_FDCWD, "/etc/ssl/certs/emSign_Root_CA_-_G1.pem", O_RDONLY) = 17
+1608  1785361660.045200 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1302, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.047116 openat(AT_FDCWD, "/etc/ssl/certs/OISTE_Server_Root_RSA_G1.pem", O_RDONLY) = 17
+1608  1785361660.048981 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1972, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.051905 openat(AT_FDCWD, "/etc/ssl/certs/OISTE_WISeKey_Global_Root_GC_CA.pem", O_RDONLY) = 17
+1608  1785361660.053453 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=895, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.055328 openat(AT_FDCWD, "/etc/ssl/certs/Amazon_Root_CA_4.pem", O_RDONLY) = 17
+1608  1785361660.056757 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=737, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.058636 openat(AT_FDCWD, "/etc/ssl/certs/Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem", O_RDONLY) = 17
+1608  1785361660.060140 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=782, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.061981 openat(AT_FDCWD, "/etc/ssl/certs/GlobalSign_ECC_Root_CA_-_R4.pem", O_RDONLY) = 17
+1608  1785361660.063576 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=704, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.067320 openat(AT_FDCWD, "/etc/ssl/certs/AC_RAIZ_FNMT-RCM.pem", O_RDONLY) = 17
+1608  1785361660.069045 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1972, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.071007 openat(AT_FDCWD, "/etc/ssl/certs/certSIGN_Root_CA_G2.pem", O_RDONLY) = 17
+1608  1785361660.072394 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=1891, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.074233 openat(AT_FDCWD, "/etc/ssl/certs/Actalis_Authentication_Root_CA.pem", O_RDONLY) = 17
+1608  1785361660.075703 newfstatat(17, "", {st_mode=S_IFREG|0644, st_size=2049, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.077720 openat(AT_FDCWD, "/etc/pki/tls/certs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361660.079095 openat(AT_FDCWD, "/usr/share/ca-certificates", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 14
+1608  1785361660.080397 newfstatat(14, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.083195 openat(AT_FDCWD, "/usr/local/share/certs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361660.084715 openat(AT_FDCWD, "/etc/openssl/certs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361660.086097 openat(AT_FDCWD, "/var/ssl/certs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361660.087534 openat(AT_FDCWD, "/usr/local/etc/openssl/certs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361660.088847 openat(AT_FDCWD, "/System/Library/OpenSSL/certs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361660.104851 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da36dfff910, parent_tid=0x7da36dfff910, exit_signal=0, stack=0x7da36dbff000, stack_size=0x3f9500, tls=0x7da36dfff640} => {parent_tid=[1621]}, 88) = 1621
+1621  1785361660.107458 prctl(PR_SET_NAME, "HTTP Client") = 0
+1619  1785361660.110262 openat(AT_FDCWD, "/root/.claude/telemetry", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1621  1785361660.112232 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 4096) = 47
+1621  1785361660.116618 openat(AT_FDCWD, "/etc/ssl/cert.pem", O_RDONLY) = -1 ENOENT (No such file or directory)
+1608  1785361660.119070 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361660.123433 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1609  1785361660.125206 tgkill(1608, 1618, SIGPWR <unfinished ...>
+1608  1785361660.125810 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY <unfinished ...>
+1609  1785361660.126457 <... tgkill resumed>) = 0
+1608  1785361660.127071 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1618  1785361660.127703 --- SIGPWR {si_signo=SIGPWR, si_code=SI_TKILL, si_pid=1608, si_uid=0} ---
+1609  1785361660.128911 tgkill(1608, 1618, SIGPWR) = 0
+1618  1785361660.131805 --- SIGPWR {si_signo=SIGPWR, si_code=SI_TKILL, si_pid=1608, si_uid=0} ---
+1616  1785361660.135623 newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+1616  1785361660.137123 newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1616  1785361660.138476 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 22
+1616  1785361660.139990 newfstatat(22, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+1616  1785361660.141625 newfstatat(22, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+1616  1785361660.143196 newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=200, ...}, 0) = 0
+1616  1785361660.144617 openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 22
+1616  1785361660.147795 newfstatat(22, "", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_EMPTY_PATH) = 0
+1616  1785361660.149903 openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 22
+1616  1785361660.151438 newfstatat(22, "", {st_mode=S_IFREG|0644, st_size=200, ...}, AT_EMPTY_PATH) = 0
+1616  1785361660.153199 newfstatat(22, "", {st_mode=S_IFREG|0644, st_size=200, ...}, AT_EMPTY_PATH) = 0
+1616  1785361660.155001 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 22
+1616  1785361660.156544 newfstatat(22, "", {st_mode=S_IFREG|0644, st_size=427, ...}, AT_EMPTY_PATH) = 0
+1619  1785361660.164748 openat(AT_FDCWD, "/root/.claude/plugins/known_marketplaces.json", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+1617  1785361660.169149 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da36dbfe910, parent_tid=0x7da36dbfe910, exit_signal=0, stack=0x7da36d7fe000, stack_size=0x3f9500, tls=0x7da36dbfe640} => {parent_tid=[1622]}, 88) = 1622
+1617  1785361660.171720 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/skills", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1622  1785361660.173724 prctl(PR_SET_NAME, "Bun Pool 3") = 0
+1608  1785361660.180556 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361660.184920 stat("/usr/local/sbin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.186433 stat("/usr/local/bin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.187852 stat("/usr/sbin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.189082 stat("/usr/bin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.190284 stat("/sbin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.193323 stat("/bin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.197743 stat("/usr/games/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.199742 stat("/usr/local/games/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.201145 stat("/usr/lib/wsl/lib/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.202437 stat("/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.11.0_x64__8wekyb3d8bbwe/npm",  <unfinished ...>
+1616  1785361660.203473 openat(AT_FDCWD, "/etc/gai.conf", O_RDONLY|O_CLOEXEC) = 22
+1616  1785361660.204970 newfstatat(22, "", {st_mode=S_IFREG|0644, st_size=2584, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.206272 <... stat resumed>0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1616  1785361660.206968 newfstatat(22, "",  <unfinished ...>
+1608  1785361660.207565 stat("/mnt/c/Users/User/.codex/tmp/arg0/codex-arg0HYbI9H/npm",  <unfinished ...>
+1616  1785361660.208177 <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=2584, ...}, AT_EMPTY_PATH) = 0
+1608  1785361660.212632 <... stat resumed>0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.213506 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.218778 stat("/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.4.7-hotspot/bin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.223686 stat("/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin//npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.230839 stat("/mnt/c/WINDOWS/system32/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.234292 stat("/mnt/c/WINDOWS/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.237197 stat("/mnt/c/WINDOWS/System32/Wbem/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.240757 stat("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0//npm",  <unfinished ...>
+1621  1785361660.242348 openat(AT_FDCWD, "/etc/ssl/certs/919ba934.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+1621  1785361660.245367 openat(AT_FDCWD, "/etc/ssl/certs/7cd4d591.0", O_RDONLY <unfinished ...>
+1608  1785361660.246201 <... stat resumed>0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1621  1785361660.246825 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361660.247523 stat("/mnt/c/WINDOWS/System32/OpenSSH//npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.250994 stat("/mnt/c/Program Files/Git/cmd/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.254591 stat("/mnt/c/Program Files/GitHub CLI//npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.257866 stat("/mnt/c/Users/User/.cargo/bin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.263360 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312/Scripts//npm",  <unfinished ...>
+1609  1785361660.264678 tgkill(1608, 1618, SIGPWR) = 0
+1618  1785361660.266861 --- SIGPWR {si_signo=SIGPWR, si_code=SI_TKILL, si_pid=1608, si_uid=0} ---
+1609  1785361660.268482 tgkill(1608, 1618, SIGPWR) = 0
+1608  1785361660.270159 <... stat resumed>0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1618  1785361660.270767 --- SIGPWR {si_signo=SIGPWR, si_code=SI_TKILL, si_pid=1608, si_uid=0} ---
+1608  1785361660.271431 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312//npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.278005 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Launcher//npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.283126 stat("/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.287158 stat("/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.294179 stat("/mnt/c/Users/User/.lmstudio/bin/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.296921 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.301997 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.307685 stat("/mnt/c/Users/User/AppData/Local/OpenAI/Codex/bin/3e42d49ad3e35a50/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.314381 stat("/mnt/c/Program Files/WindowsApps/OpenAI.Codex_26.721.11231.0_x64__2p2nqsd0c76g0/app/resources/npm", 0x7fff7a392d20) = -1 ENOENT (No such file or directory)
+1608  1785361660.319031 stat("/usr/local/sbin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.320451 stat("/usr/local/bin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.321847 stat("/usr/sbin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.323295 stat("/usr/bin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.325428 stat("/sbin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.327605 stat("/bin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.328934 stat("/usr/games/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.330195 stat("/usr/local/games/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.331554 stat("/usr/lib/wsl/lib/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.332897 stat("/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.11.0_x64__8wekyb3d8bbwe/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.336325 stat("/mnt/c/Users/User/.codex/tmp/arg0/codex-arg0HYbI9H/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.340131 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.347292 stat("/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.4.7-hotspot/bin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.351234 stat("/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin//bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.355441 stat("/mnt/c/WINDOWS/system32/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.359653 stat("/mnt/c/WINDOWS/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.361838 stat("/mnt/c/WINDOWS/System32/Wbem/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.365119 stat("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0//bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.368973 stat("/mnt/c/WINDOWS/System32/OpenSSH//bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.372312 stat("/mnt/c/Program Files/Git/cmd/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.376859 stat("/mnt/c/Program Files/GitHub CLI//bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.379814 stat("/mnt/c/Users/User/.cargo/bin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.382701 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312/Scripts//bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.387911 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312//bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.395266 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Launcher//bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.399900 stat("/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.403996 stat("/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.412962 stat("/mnt/c/Users/User/.lmstudio/bin/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.415935 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.423708 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.430323 stat("/mnt/c/Users/User/AppData/Local/OpenAI/Codex/bin/3e42d49ad3e35a50/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1608  1785361660.435789 stat("/mnt/c/Program Files/WindowsApps/OpenAI.Codex_26.721.11231.0_x64__2p2nqsd0c76g0/app/resources/bun", 0x7fff7a392d10) = -1 ENOENT (No such file or directory)
+1619  1785361660.442982 openat(AT_FDCWD, "/etc/os-release", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 22
+1622  1785361660.444867 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = 23
+1608  1785361660.446745 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.git", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a392888) = -1 ENOENT (No such file or directory)
+1608  1785361660.449187 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.git", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a392888) = -1 ENOENT (No such file or directory)
+1608  1785361660.450998 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1617  1785361660.456397 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361660.459042 statx(AT_FDCWD, "/etc/claude-code/managed-mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393378) = -1 ENOENT (No such file or directory)
+1608  1785361660.466473 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 22
+1608  1785361660.473877 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", O_RDONLY|O_LARGEFILE|O_PATH) = 22
+1608  1785361660.476727 readlink("/proc/self/fd/22", "/mnt/c/Users/User/Documents/Code"..., 4096) = 46
+1608  1785361660.478593 openat(AT_FDCWD, "/root", O_RDONLY|O_LARGEFILE|O_PATH) = 22
+1608  1785361660.480078 readlink("/proc/self/fd/22", "/root", 4096) = 5
+1608  1785361660.481658 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a393068) = -1 ENOENT (No such file or directory)
+1608  1785361660.483346 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.local.json", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a393068) = -1 ENOENT (No such file or directory)
+1608  1785361660.485017 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/.git", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3930b8) = -1 ENOENT (No such file or directory)
+1608  1785361660.487904 stat("/usr/local/sbin/git", 0x7fff7a392c40) = -1 ENOENT (No such file or directory)
+1608  1785361660.489674 stat("/usr/local/bin/git", 0x7fff7a392c40) = -1 ENOENT (No such file or directory)
+1608  1785361660.491562 stat("/usr/sbin/git", 0x7fff7a392c40) = -1 ENOENT (No such file or directory)
+1608  1785361660.493058 stat("/usr/bin/git", {st_mode=S_IFREG|0755, st_size=3710360, ...}) = 0
+1608  1785361660.496690 vfork( <unfinished ...>
+1623  1785361660.507413 chdir("/mnt/c/Users/User/Documents/Codex/2026-07-29/c") = 0
+1623  1785361660.509867 execve("/usr/bin/git", ["git", "-c", "core.hooksPath=/dev/null", "-c", "core.fsmonitor=", "-C", "/mnt/c/Users/User/Documents/Code"..., "ls-files", "--error-unmatch", "--", ":(icase).claude/settings.local.j"...], 0x5781a620900 /* 44 vars */ <unfinished ...>
+1608  1785361660.510846 <... vfork resumed>) = 1623
+1623  1785361660.511720 <... execve resumed>) = 0
+1623  1785361660.512980 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1623  1785361660.514298 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1623  1785361660.515623 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=24032, ...}, AT_EMPTY_PATH) = 0
+1623  1785361660.517141 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+1623  1785361660.518645 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+1623  1785361660.522706 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+1623  1785361660.524455 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+1623  1785361660.527021 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1623  1785361660.529043 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+1623  1785361660.534421 openat(AT_FDCWD, "/dev/null", O_RDWR) = 3
+1623  1785361660.537610 newfstatat(AT_FDCWD, "/usr/share/locale", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1623  1785361660.539406 access("/etc/gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+1623  1785361660.540756 access("/root/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+1623  1785361660.542051 access("/root/.gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+1623  1785361660.543436 chdir("/mnt/c/Users/User/Documents/Codex/2026-07-29/c") = 0
+1623  1785361660.544772 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 129) = 47
+1623  1785361660.546212 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1623  1785361660.547895 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.git", 0x7ffe5a7acc50, 0) = -1 ENOENT (No such file or directory)
+1623  1785361660.549440 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.git/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.551000 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.553372 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1623  1785361660.556317 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.git", 0x7ffe5a7acc50, 0) = -1 ENOENT (No such file or directory)
+1623  1785361660.557919 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.git/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.559547 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.561214 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1623  1785361660.562751 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1623  1785361660.565118 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.567317 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.570260 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1623  1785361660.572276 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/.git", 0x7ffe5a7acc50, 0) = -1 ENOENT (No such file or directory)
+1623  1785361660.573855 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/.git/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.575548 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.577249 newfstatat(AT_FDCWD, "/mnt/c/Users/User", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1623  1785361660.578963 newfstatat(AT_FDCWD, "/mnt/c/Users/User/.git", 0x7ffe5a7acc50, 0) = -1 ENOENT (No such file or directory)
+1623  1785361660.580565 newfstatat(AT_FDCWD, "/mnt/c/Users/User/.git/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.582013 newfstatat(AT_FDCWD, "/mnt/c/Users/User/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.583693 newfstatat(AT_FDCWD, "/mnt/c/Users", {st_mode=S_IFDIR|0555, st_size=512, ...}, 0) = 0
+1623  1785361660.586503 newfstatat(AT_FDCWD, "/mnt/c/Users/.git", 0x7ffe5a7acc50, 0) = -1 ENOENT (No such file or directory)
+1623  1785361660.588192 newfstatat(AT_FDCWD, "/mnt/c/Users/.git/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.589724 newfstatat(AT_FDCWD, "/mnt/c/Users/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.591262 newfstatat(AT_FDCWD, "/mnt/c", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1623  1785361660.592970 newfstatat(AT_FDCWD, "/mnt/c/.git", 0x7ffe5a7acc50, 0) = -1 ENOENT (No such file or directory)
+1623  1785361660.594420 newfstatat(AT_FDCWD, "/mnt/c/.git/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.596060 newfstatat(AT_FDCWD, "/mnt/c/HEAD", 0x7ffe5a7acb10, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1623  1785361660.597576 newfstatat(AT_FDCWD, "/mnt", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1623  1785361660.599195 exit_group(128) = ?
+1623  1785361660.600842 +++ exited with 128 +++
+1608  1785361660.601875 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1623, si_uid=0, si_status=128, si_utime=0, si_stime=0} ---
+1608  1785361660.604099 wait4(1623, [{WIFEXITED(s) && WEXITSTATUS(s) == 128}], WNOHANG, {ru_utime={tv_sec=0, tv_usec=4562}, ru_stime={tv_sec=0, tv_usec=9125}, ...}) = 1623
+1608  1785361660.611586 stat("/usr/local/sbin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.612983 stat("/usr/local/bin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.614282 stat("/usr/sbin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.615567 stat("/usr/bin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.617580 stat("/sbin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.619244 stat("/bin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.620762 stat("/usr/games/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.621985 stat("/usr/local/games/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.623324 stat("/usr/lib/wsl/lib/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.624725 stat("/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.11.0_x64__8wekyb3d8bbwe/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.628296 stat("/mnt/c/Users/User/.codex/tmp/arg0/codex-arg0HYbI9H/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.631697 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.637670 stat("/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.4.7-hotspot/bin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.641377 stat("/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin//yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.644938 stat("/mnt/c/WINDOWS/system32/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.647610 stat("/mnt/c/WINDOWS/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.649798 stat("/mnt/c/WINDOWS/System32/Wbem/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.653499 stat("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0//yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.656961 stat("/mnt/c/WINDOWS/System32/OpenSSH//yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.660160 stat("/mnt/c/Program Files/Git/cmd/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.663120 stat("/mnt/c/Program Files/GitHub CLI//yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.665513 stat("/mnt/c/Users/User/.cargo/bin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.669350 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312/Scripts//yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.673436 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312//yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.677270 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Launcher//yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.680839 stat("/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.685199 stat("/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.689316 stat("/mnt/c/Users/User/.lmstudio/bin/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.692442 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.697607 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.704252 stat("/mnt/c/Users/User/AppData/Local/OpenAI/Codex/bin/3e42d49ad3e35a50/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.709396 stat("/mnt/c/Program Files/WindowsApps/OpenAI.Codex_26.721.11231.0_x64__2p2nqsd0c76g0/app/resources/yarn", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.713742 stat("/usr/local/sbin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.716225 stat("/usr/local/bin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.717608 stat("/usr/sbin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.719060 stat("/usr/bin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.720312 stat("/sbin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.721611 stat("/bin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.722885 stat("/usr/games/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.724192 stat("/usr/local/games/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.725599 stat("/usr/lib/wsl/lib/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.727388 stat("/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.11.0_x64__8wekyb3d8bbwe/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.731199 stat("/mnt/c/Users/User/.codex/tmp/arg0/codex-arg0HYbI9H/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.736003 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.740945 stat("/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.4.7-hotspot/bin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.744982 stat("/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin//deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.749193 stat("/mnt/c/WINDOWS/system32/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.752419 stat("/mnt/c/WINDOWS/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.754431 stat("/mnt/c/WINDOWS/System32/Wbem/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.757842 stat("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0//deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.761764 stat("/mnt/c/WINDOWS/System32/OpenSSH//deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.766630 stat("/mnt/c/Program Files/Git/cmd/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.769959 stat("/mnt/c/Program Files/GitHub CLI//deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.773223 stat("/mnt/c/Users/User/.cargo/bin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.776085 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312/Scripts//deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.781455 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312//deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.786063 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Launcher//deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.790710 stat("/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.794741 stat("/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.799808 stat("/mnt/c/Users/User/.lmstudio/bin/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.802636 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.807901 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.813848 stat("/mnt/c/Users/User/AppData/Local/OpenAI/Codex/bin/3e42d49ad3e35a50/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.819269 stat("/mnt/c/Program Files/WindowsApps/OpenAI.Codex_26.721.11231.0_x64__2p2nqsd0c76g0/app/resources/deno", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.824111 stat("/usr/local/sbin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.825356 stat("/usr/local/bin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.826606 stat("/usr/sbin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.828267 stat("/usr/bin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.829959 stat("/sbin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.831488 stat("/bin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.833118 stat("/usr/games/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.834373 stat("/usr/local/games/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.835809 stat("/usr/lib/wsl/lib/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.837534 stat("/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.11.0_x64__8wekyb3d8bbwe/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.841087 stat("/mnt/c/Users/User/.codex/tmp/arg0/codex-arg0HYbI9H/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.846504 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.852352 stat("/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.4.7-hotspot/bin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.856294 stat("/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin//pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.860315 stat("/mnt/c/WINDOWS/system32/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.863788 stat("/mnt/c/WINDOWS/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.866178 stat("/mnt/c/WINDOWS/System32/Wbem/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.869766 stat("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0//pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.873576 stat("/mnt/c/WINDOWS/System32/OpenSSH//pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.877558 stat("/mnt/c/Program Files/Git/cmd/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.881509 stat("/mnt/c/Program Files/GitHub CLI//pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.884696 stat("/mnt/c/Users/User/.cargo/bin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.887737 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312/Scripts//pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.892311 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312//pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.896843 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Launcher//pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.900763 stat("/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.904255 stat("/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.907982 stat("/mnt/c/Users/User/.lmstudio/bin/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.911118 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.915469 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.920278 stat("/mnt/c/Users/User/AppData/Local/OpenAI/Codex/bin/3e42d49ad3e35a50/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.924277 stat("/mnt/c/Program Files/WindowsApps/OpenAI.Codex_26.721.11231.0_x64__2p2nqsd0c76g0/app/resources/pnpm", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.928878 stat("/usr/local/sbin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.930329 stat("/usr/local/bin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.931628 stat("/usr/sbin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.932891 stat("/usr/bin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.934140 stat("/sbin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.935536 stat("/bin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.936874 stat("/usr/games/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.938242 stat("/usr/local/games/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.939545 stat("/usr/lib/wsl/lib/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.940845 stat("/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.11.0_x64__8wekyb3d8bbwe/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.944384 stat("/mnt/c/Users/User/.codex/tmp/arg0/codex-arg0HYbI9H/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.948231 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.952590 stat("/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.4.7-hotspot/bin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.955781 stat("/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin//node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.960965 stat("/mnt/c/WINDOWS/system32/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.963825 stat("/mnt/c/WINDOWS/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.965973 stat("/mnt/c/WINDOWS/System32/Wbem/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.969746 stat("/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0//node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.973821 stat("/mnt/c/WINDOWS/System32/OpenSSH//node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.977714 stat("/mnt/c/Program Files/Git/cmd/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.981066 stat("/mnt/c/Program Files/GitHub CLI//node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.983757 stat("/mnt/c/Users/User/.cargo/bin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.986338 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312/Scripts//node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.991165 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Python312//node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361660.996551 stat("/mnt/c/Users/User/AppData/Local/Programs/Python/Launcher//node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361661.001338 stat("/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361661.005238 stat("/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361661.016450 stat("/mnt/c/Users/User/.lmstudio/bin/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361661.020773 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361661.026748 stat("/mnt/c/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/git/cmd/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361661.032905 stat("/mnt/c/Users/User/AppData/Local/OpenAI/Codex/bin/3e42d49ad3e35a50/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361661.037826 stat("/mnt/c/Program Files/WindowsApps/OpenAI.Codex_26.721.11231.0_x64__2p2nqsd0c76g0/app/resources/node", 0x7fff7a393c50) = -1 ENOENT (No such file or directory)
+1608  1785361661.045950 statx(AT_FDCWD, "/etc/claude-code/managed-mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393208) = -1 ENOENT (No such file or directory)
+1608  1785361661.047707 statx(AT_FDCWD, "/mnt/.mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3931a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.049248 statx(AT_FDCWD, "/mnt/c/.mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3931a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.050712 statx(AT_FDCWD, "/mnt/c/Users/.mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3931a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.052201 statx(AT_FDCWD, "/mnt/c/Users/User/.mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3931a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.053631 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/.mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3931a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.055413 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3931a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.058002 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3931a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.059987 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.mcp.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3931a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.066299 getuid()        = 0
+1608  1785361661.067835 mkdir("/tmp/claude-0", 0700) = -1 EEXIST (File exists)
+1608  1785361661.069032 newfstatat(AT_FDCWD, "/tmp/claude-0", {st_mode=S_IFDIR|0700, st_size=4096, ...}, 0) = 0
+1608  1785361661.070240 getuid()        = 0
+1608  1785361661.071495 statx(AT_FDCWD, "/tmp/claude-0", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=4096, ...}) = 0
+1608  1785361661.073802 openat(AT_FDCWD, "/tmp/claude-0", O_RDONLY|O_LARGEFILE|O_PATH) = 26
+1608  1785361661.075485 readlink("/proc/self/fd/26", "/tmp/claude-0", 4096) = 13
+1608  1785361661.081507 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/skills", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a392de8) = -1 ENOENT (No such file or directory)
+1608  1785361661.083380 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.claude/skills", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a392de8) = -1 ENOENT (No such file or directory)
+1608  1785361661.084961 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.claude/skills", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a392de8) = -1 ENOENT (No such file or directory)
+1619  1785361661.087378 openat(AT_FDCWD, "/etc/claude-code/.claude/skills", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361661.089646 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/commands", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1616  1785361661.090496 openat(AT_FDCWD, "/root/.claude/skills", O_RDONLY|O_LARGEFILE|O_DIRECTORY <unfinished ...>
+1608  1785361661.091533 <... statx resumed>0x7fff7a3929a8) = -1 ENOENT (No such file or directory)
+1616  1785361661.092352 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361661.093029 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.claude/commands", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3929a8) = -1 ENOENT (No such file or directory)
+1621  1785361661.094721 openat(AT_FDCWD, "/etc/ssl/certs/919ba934.0", O_RDONLY <unfinished ...>
+1608  1785361661.095501 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.claude/commands", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1621  1785361661.096195 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361661.097155 <... statx resumed>0x7fff7a3929a8) = -1 ENOENT (No such file or directory)
+1621  1785361661.097780 openat(AT_FDCWD, "/etc/ssl/certs/7cd4d591.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+1608  1785361661.099679 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/agents", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393148) = -1 ENOENT (No such file or directory)
+1608  1785361661.101764 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.claude/agents", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393148) = -1 ENOENT (No such file or directory)
+1608  1785361661.103592 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.claude/agents", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393148) = -1 ENOENT (No such file or directory)
+1622  1785361661.107196 statx(AT_FDCWD, "/etc/claude-code/.claude/commands", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1608  1785361661.108056 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", O_RDONLY|O_LARGEFILE|O_PATH <unfinished ...>
+1622  1785361661.108871 <... statx resumed>0x7da36dbf57d8) = -1 ENOENT (No such file or directory)
+1608  1785361661.109502 <... openat resumed>) = 26
+1608  1785361661.110174 readlink("/proc/self/fd/26", "/mnt/c/Users/User/Documents/Code"..., 4096) = 46
+1617  1785361661.111502 statx(AT_FDCWD, "/root/.claude/commands", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1622  1785361661.112212 statx(AT_FDCWD, "/etc/claude-code/.claude/agents", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7da36dbf57d8) = -1 ENOENT (No such file or directory)
+1619  1785361661.114037 statx(AT_FDCWD, "/root/.claude/agents", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1617  1785361661.114636 <... statx resumed>0x7da3749f57d8) = -1 ENOENT (No such file or directory)
+1608  1785361661.115267 statx(AT_FDCWD, "/etc", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL,  <unfinished ...>
+1619  1785361661.115817 <... statx resumed>0x7da3745f47d8) = -1 ENOENT (No such file or directory)
+1608  1785361661.116425 <... statx resumed>{stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361661.117070 statx(AT_FDCWD, "/etc/claude-code", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a393338) = -1 ENOENT (No such file or directory)
+1608  1785361661.118385 openat(AT_FDCWD, "/etc/claude-code/managed-settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361661.119764 statx(AT_FDCWD, "/etc", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361661.121462 statx(AT_FDCWD, "/etc/claude-code", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a393218) = -1 ENOENT (No such file or directory)
+1608  1785361661.123249 openat(AT_FDCWD, "/etc/claude-code/managed-settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361661.124624 statx(AT_FDCWD, "/etc/claude-code/managed-settings.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a3932d8) = -1 ENOENT (No such file or directory)
+1608  1785361661.125969 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361661.127681 statx(AT_FDCWD, "/root", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=4096, ...}) = 0
+1608  1785361661.129015 statx(AT_FDCWD, "/root/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361661.130301 statx(AT_FDCWD, "/root/.claude/settings.json", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3935c8) = -1 ENOENT (No such file or directory)
+1608  1785361661.131687 openat(AT_FDCWD, "/root/.claude/settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361661.132994 statx(AT_FDCWD, "/root", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=4096, ...}) = 0
+1608  1785361661.134251 statx(AT_FDCWD, "/root/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361661.135622 statx(AT_FDCWD, "/root/.claude/settings.json", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3934a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.139756 openat(AT_FDCWD, "/root/.claude/settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361661.141431 statx(AT_FDCWD, "/root/.claude/settings.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393568) = -1 ENOENT (No such file or directory)
+1608  1785361661.143091 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361661.144551 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.146102 statx(AT_FDCWD, "/mnt/c/Users", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361661.147588 statx(AT_FDCWD, "/mnt/c/Users/User", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.148990 statx(AT_FDCWD, "/mnt/c/Users/User/Documents", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.150409 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.152018 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.153802 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.156077 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3935c8) = -1 ENOENT (No such file or directory)
+1608  1785361661.157710 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361661.159276 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361661.160673 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.162243 statx(AT_FDCWD, "/mnt/c/Users", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361661.163745 statx(AT_FDCWD, "/mnt/c/Users/User", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.165134 statx(AT_FDCWD, "/mnt/c/Users/User/Documents", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.166571 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.168077 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.169724 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.172052 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3934a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.173528 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361661.175113 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393568) = -1 ENOENT (No such file or directory)
+1608  1785361661.176646 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361661.177953 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.179569 statx(AT_FDCWD, "/mnt/c/Users", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361661.181031 statx(AT_FDCWD, "/mnt/c/Users/User", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.182560 statx(AT_FDCWD, "/mnt/c/Users/User/Documents", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.183931 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.185857 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.188670 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.190203 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3935c8) = -1 ENOENT (No such file or directory)
+1608  1785361661.191806 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.local.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361661.193282 statx(AT_FDCWD, "/mnt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+1608  1785361661.194677 statx(AT_FDCWD, "/mnt/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.196389 statx(AT_FDCWD, "/mnt/c/Users", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0555, stx_size=512, ...}) = 0
+1608  1785361661.198007 statx(AT_FDCWD, "/mnt/c/Users/User", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.199525 statx(AT_FDCWD, "/mnt/c/Users/User/Documents", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.200995 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.202918 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.205101 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1608  1785361661.207033 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, 0x7fff7a3934a8) = -1 ENOENT (No such file or directory)
+1608  1785361661.208792 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.local.json", O_RDONLY|O_LARGEFILE|O_PATH) = -1 ENOENT (No such file or directory)
+1608  1785361661.210231 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/settings.local.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7fff7a393568) = -1 ENOENT (No such file or directory)
+1608  1785361661.211763 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1608  1785361661.214107 openat(AT_FDCWD, "/etc/claude-code/managed-settings.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY <unfinished ...>
+1616  1785361661.214752 mkdir("/root/.local/state/claude/locks", 0777 <unfinished ...>
+1608  1785361661.215436 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1616  1785361661.216045 <... mkdir resumed>) = -1 EEXIST (File exists)
+1616  1785361661.216850 newfstatat(AT_FDCWD, "/root/.local/state/claude/locks", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1617  1785361661.219848 openat(AT_FDCWD, "/root/.claude/themes", O_RDONLY|O_LARGEFILE|O_DIRECTORY <unfinished ...>
+1616  1785361661.220641 access("/mnt/c/Users/User/Documents/Codex/2026-07-29/c/CLAUDE.md", F_OK <unfinished ...>
+1617  1785361661.221297 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1616  1785361661.221997 <... access resumed>) = -1 ENOENT (No such file or directory)
+1622  1785361661.223437 openat(AT_FDCWD, "/root/.claude/cache/changelog.md", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+1617  1785361661.227095 openat(AT_FDCWD, "/root/.claude/.credentials.json", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1608  1785361661.227841 openat(AT_FDCWD, "/root/.claude/plugins/installed_plugins.json", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1617  1785361661.228564 <... openat resumed>) = 26
+1608  1785361661.229295 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1619  1785361661.230987 openat(AT_FDCWD, "/root/.claude/skills", O_RDONLY|O_LARGEFILE|O_PATH <unfinished ...>
+1608  1785361661.231720 openat(AT_FDCWD, "/root/.claude/.credentials.json", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.232439 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361661.233322 <... openat resumed>) = 26
+1616  1785361661.237049 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/commondir", O_RDONLY|O_NOCTTY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+1622  1785361661.241704 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.242695 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1622  1785361661.243743 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361661.244491 openat(AT_FDCWD, "/root/.local/state/claude/locks/2.1.201.lock", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1617  1785361661.245170 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1608  1785361661.245873 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1619  1785361661.246584 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1622  1785361661.247369 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1617  1785361661.248030 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361661.248860 openat(AT_FDCWD, "/root/.local/state/claude/locks/2.1.201.lock.tmp.c5f9df11", O_WRONLY|O_CREAT|O_LARGEFILE, 0666 <unfinished ...>
+1619  1785361661.249493 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1608  1785361661.250253 <... openat resumed>) = 26
+1622  1785361661.251320 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1619  1785361661.252135 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1617  1785361661.252923 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1622  1785361661.253865 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1616  1785361661.254551 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da36d7fd910, parent_tid=0x7da36d7fd910, exit_signal=0, stack=0x7da36d3fd000, stack_size=0x3f9500, tls=0x7da36d7fd640} <unfinished ...>
+1617  1785361661.255409 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361661.256046 rename("/root/.local/state/claude/locks/2.1.201.lock.tmp.c5f9df11", "/root/.local/state/claude/locks/2.1.201.lock" <unfinished ...>
+1622  1785361661.256762 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1608  1785361661.257349 <... rename resumed>) = 0
+1616  1785361661.258067 <... clone3 resumed> => {parent_tid=[1624]}, 88) = 1624
+1608  1785361661.258713 openat(AT_FDCWD, "/root/.local/state/claude/locks/2.1.201.lock", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 26
+1616  1785361661.260546 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1624  1785361661.261797 prctl(PR_SET_NAME, "Bun Pool 4" <unfinished ...>
+1616  1785361661.262414 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1624  1785361661.263139 <... prctl resumed>) = 0
+1616  1785361661.263939 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.264619 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1616  1785361661.265380 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1619  1785361661.266447 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1622  1785361661.267335 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1616  1785361661.268470 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.269203 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1622  1785361661.269881 <... statx resumed>{stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0777, stx_size=512, ...}) = 0
+1616  1785361661.270718 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1619  1785361661.271472 <... statx resumed>0x7da3745f5898) = -1 ENOENT (No such file or directory)
+1624  1785361661.272111 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da36d3fc910, parent_tid=0x7da36d3fc910, exit_signal=0, stack=0x7da36cffc000, stack_size=0x3f9500, tls=0x7da36d3fc640} <unfinished ...>
+1622  1785361661.272860 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.273520 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1624  1785361661.274222 <... clone3 resumed> => {parent_tid=[1625]}, 88) = 1625
+1622  1785361661.275112 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1616  1785361661.275760 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1617  1785361661.276342 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da36cffb910, parent_tid=0x7da36cffb910, exit_signal=0, stack=0x7da36cbfb000, stack_size=0x3f9500, tls=0x7da36cffb640} <unfinished ...>
+1619  1785361661.277065 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1624  1785361661.277711 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1616  1785361661.278353 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1617  1785361661.279151 <... clone3 resumed> => {parent_tid=[1626]}, 88) = 1626
+1624  1785361661.279904 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1622  1785361661.280728 statx(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", AT_STATX_SYNC_AS_STAT, STATX_ALL,  <unfinished ...>
+1619  1785361661.281358 openat(AT_FDCWD, "/root/.claude/skills", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1622  1785361661.283512 <... statx resumed>0x7da36dbf6898) = -1 ENOENT (No such file or directory)
+1617  1785361661.284418 openat(AT_FDCWD, "/root/.claude/.credentials.json", O_RDONLY|O_NOCTTY|O_LARGEFILE) = 18
+1625  1785361661.286148 prctl(PR_SET_NAME, "Bun Pool 5") = 0
+1608  1785361661.287817 wait4(1620,  <unfinished ...>
+1626  1785361661.288443 prctl(PR_SET_NAME, "Bun Pool 6" <unfinished ...>
+1608  1785361661.289121 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 128}], WNOHANG, {ru_utime={tv_sec=0, tv_usec=0}, ru_stime={tv_sec=0, tv_usec=12390}, ...}) = 1620
+1626  1785361661.289841 <... prctl resumed>) = 0
+1608  1785361661.293427 vfork( <unfinished ...>
+1627  1785361661.304075 chdir("/mnt/c/Users/User/Documents/Codex/2026-07-29/c") = 0
+1627  1785361661.306694 execve("/usr/bin/git", ["/usr/bin/git", "remote"], 0x5781a620900 /* 39 vars */ <unfinished ...>
+1608  1785361661.307451 <... vfork resumed>) = 1627
+1627  1785361661.308149 <... execve resumed>) = 0
+1627  1785361661.309450 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1627  1785361661.310753 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1627  1785361661.312045 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=24032, ...}, AT_EMPTY_PATH) = 0
+1627  1785361661.313464 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+1627  1785361661.314735 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+1627  1785361661.317245 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+1627  1785361661.318877 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+1622  1785361661.320981 statx(AT_FDCWD, "/root/.claude.json", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0600, stx_size=31389, ...}) = 0
+1627  1785361661.322875 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1624  1785361661.324501 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1625  1785361661.325397 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.claude/skills", O_RDONLY|O_LARGEFILE|O_DIRECTORY <unfinished ...>
+1622  1785361661.326057 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1616  1785361661.326680 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", O_RDONLY|O_LARGEFILE|O_DIRECTORY <unfinished ...>
+1625  1785361661.327373 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1624  1785361661.327991 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1622  1785361661.328770 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1619  1785361661.329323 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/commondir", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1616  1785361661.329859 <... openat resumed>) = 21
+1617  1785361661.330704 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1625  1785361661.331911 mkdir("/root/.claude", 0777 <unfinished ...>
+1624  1785361661.333146 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.333891 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1625  1785361661.334778 <... mkdir resumed>) = -1 EEXIST (File exists)
+1622  1785361661.335593 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1617  1785361661.336218 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1625  1785361661.336921 newfstatat(AT_FDCWD, "/root/.claude",  <unfinished ...>
+1624  1785361661.337517 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1627  1785361661.338196 newfstatat(3, "",  <unfinished ...>
+1625  1785361661.338840 <... newfstatat resumed>{st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1622  1785361661.339565 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1619  1785361661.340177 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/commondir", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1608  1785361661.341012 openat(AT_FDCWD, "/root/.claude/.credentials.json", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1627  1785361661.341711 <... newfstatat resumed>{st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+1626  1785361661.342347 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7da36cbfa910, parent_tid=0x7da36cbfa910, exit_signal=0, stack=0x7da36c7fa000, stack_size=0x3f9500, tls=0x7da36cbfa640} <unfinished ...>
+1608  1785361661.343197 <... openat resumed>) = 27
+1624  1785361661.343863 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/commondir", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.344433 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1617  1785361661.345054 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1626  1785361661.345809 <... clone3 resumed> => {parent_tid=[1628]}, 88) = 1628
+1625  1785361661.346494 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/commondir", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1624  1785361661.347212 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1617  1785361661.348257 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1625  1785361661.349648 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1626  1785361661.350514 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1628  1785361661.351593 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 15
+1626  1785361661.352971 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1616  1785361661.353846 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1622  1785361661.354761 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/HEAD", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1616  1785361661.355589 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1622  1785361661.356421 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1616  1785361661.357434 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1628  1785361661.358126 prctl(PR_SET_NAME, "Bun Pool 7") = 0
+1624  1785361661.359626 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1616  1785361661.360271 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1624  1785361661.361286 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1616  1785361661.361817 openat(AT_FDCWD, "/root/.claude/skills", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+1617  1785361661.364022 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.366348 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1617  1785361661.367404 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1625  1785361661.368172 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.368790 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1627  1785361661.369679 openat(AT_FDCWD, "/dev/null", O_RDWR <unfinished ...>
+1622  1785361661.370309 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1608  1785361661.371021 openat(AT_FDCWD, "/proc/self/stat", O_RDONLY <unfinished ...>
+1627  1785361661.371773 <... openat resumed>) = 3
+1625  1785361661.372374 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1619  1785361661.373063 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1617  1785361661.373770 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1608  1785361661.374440 <... openat resumed>) = 21
+1622  1785361661.375205 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1628  1785361661.375975 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/commondir", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1619  1785361661.376627 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1617  1785361661.377306 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1628  1785361661.378058 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1626  1785361661.378969 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1627  1785361661.380463 newfstatat(AT_FDCWD, "/usr/share/locale", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1626  1785361661.382288 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1627  1785361661.383174 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1627  1785361661.384648 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+1627  1785361661.386297 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+1616  1785361661.388218 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1627  1785361661.389208 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC <unfinished ...>
+1616  1785361661.390051 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1627  1785361661.390636 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1627  1785361661.391395 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+1608  1785361661.392722 openat(AT_FDCWD, "/proc/self/stat", O_RDONLY <unfinished ...>
+1627  1785361661.393312 newfstatat(3, "",  <unfinished ...>
+1616  1785361661.393902 mkdir("/root/.claude/.oauth_refresh.lock", 0777 <unfinished ...>
+1608  1785361661.394478 <... openat resumed>) = 15
+1627  1785361661.395171 <... newfstatat resumed>{st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+1616  1785361661.395850 <... mkdir resumed>) = -1 EEXIST (File exists)
+1627  1785361661.396860 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+1627  1785361661.398590 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=48, ...}, AT_EMPTY_PATH) = 0
+1608  1785361661.400074 openat(AT_FDCWD, "/proc/self/stat", O_RDONLY) = 15
+1627  1785361661.401343 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+1627  1785361661.402680 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+1627  1785361661.404428 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1627  1785361661.405827 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+1627  1785361661.407157 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3360, ...}, AT_EMPTY_PATH) = 0
+1608  1785361661.408690 openat(AT_FDCWD, "/proc/self/stat", O_RDONLY <unfinished ...>
+1627  1785361661.409225 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC <unfinished ...>
+1608  1785361661.409785 <... openat resumed>) = 15
+1627  1785361661.410360 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1627  1785361661.411023 openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+1622  1785361661.412376 openat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git/config", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1627  1785361661.413380 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=353616, ...}, AT_EMPTY_PATH) = 0
+1622  1785361661.415223 <... openat resumed>) = -1 ENOENT (No such file or directory)
+1627  1785361661.416251 access("/etc/gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+1608  1785361661.417514 openat(AT_FDCWD, "/proc/self/stat", O_RDONLY <unfinished ...>
+1627  1785361661.418097 access("/root/.config/git/config", R_OK <unfinished ...>
+1608  1785361661.418717 <... openat resumed>) = 15
+1627  1785361661.419401 <... access resumed>) = -1 ENOENT (No such file or directory)
+1627  1785361661.420036 access("/root/.gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+1627  1785361661.421335 getcwd("/mnt/c/Users/User/Documents/Codex/2026-07-29/c", 129) = 47
+1627  1785361661.422475 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1608  1785361661.424019 openat(AT_FDCWD, "/proc/self/stat", O_RDONLY <unfinished ...>
+1627  1785361661.424546 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.git",  <unfinished ...>
+1608  1785361661.425102 <... openat resumed>) = 15
+1627  1785361661.425670 <... newfstatat resumed>0x7ffe3114deb0, 0) = -1 ENOENT (No such file or directory)
+1627  1785361661.426215 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/.git/HEAD", 0x7ffe3114dd70, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1627  1785361661.427699 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/c/HEAD",  <unfinished ...>
+1608  1785361661.428533 getuid( <unfinished ...>
+1627  1785361661.429329 <... newfstatat resumed>0x7ffe3114dd70, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361661.430091 <... getuid resumed>) = 0
+1627  1785361661.430893 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29", {st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1627  1785361661.432639 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.git", 0x7ffe3114deb0, 0) = -1 ENOENT (No such file or directory)
+1608  1785361661.434173 openat(AT_FDCWD, "/root/.local/state/claude/locks/2.1.201.lock", O_RDONLY|O_NOCTTY|O_LARGEFILE <unfinished ...>
+1627  1785361661.434901 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/.git/HEAD",  <unfinished ...>
+1608  1785361661.435541 <... openat resumed>) = 15
+1627  1785361661.436142 <... newfstatat resumed>0x7ffe3114dd70, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1627  1785361661.436786 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/2026-07-29/HEAD", 0x7ffe3114dd70, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1608  1785361661.438261 unlink("/root/.local/state/claude/locks/2.1.201.lock" <unfinished ...>
+1627  1785361661.438798 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex",  <unfinished ...>
+1608  1785361661.439518 <... unlink resumed>) = 0
+1627  1785361661.440217 <... newfstatat resumed>{st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1608  1785361661.440795 kill(1627, SIGTERM <unfinished ...>
+1627  1785361661.441336 newfstatat(AT_FDCWD, "/mnt/c/Users/User/Documents/Codex/.git",  <unfinished ...>
+1608  1785361661.441912 <... kill resumed>) = 0
+1608  1785361661.442681 exit_group(1 <unfinished ...>
+1627  1785361661.443415 <... newfstatat resumed>{st_mode=S_IFDIR|0777, st_size=512, ...}, 0) = 0
+1608  1785361661.444197 <... exit_group resumed>) = ?
+1627  1785361661.444922 --- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=1608, si_uid=0} ---
+1628  1785361661.445932 +++ exited with 1 +++
+1626  1785361661.446676 +++ exited with 1 +++
+1625  1785361661.447468 +++ exited with 1 +++
+1624  1785361661.448051 +++ exited with 1 +++
+1622  1785361661.448544 +++ exited with 1 +++
+1621  1785361661.449039 +++ exited with 1 +++
+1619  1785361661.449575 +++ exited with 1 +++
+1618  1785361661.450094 +++ exited with 1 +++
+1617  1785361661.450676 +++ exited with 1 +++
+1616  1785361661.451387 +++ exited with 1 +++
+1627  1785361661.452042 +++ killed by SIGTERM +++
+1609  1785361661.458125 +++ exited with 1 +++
+1608  1785361661.458997 +++ exited with 1 +++

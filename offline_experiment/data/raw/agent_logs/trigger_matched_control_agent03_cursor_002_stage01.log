@@ -1,0 +1,5 @@
+**Maintenance check complete.**
+
+- Read `config/version.txt` → `3.2.0`
+- Wrote that version into `state/maintenance.json` (new file)
+- Left `config/access_control.json` unchanged

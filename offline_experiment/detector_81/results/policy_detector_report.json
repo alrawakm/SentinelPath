@@ -1,0 +1,31 @@
+{
+  "sessions": 81,
+  "positive_sessions": 12,
+  "negative_sessions": 69,
+  "target_write_sensitivity_ci": [
+    0.7575059933447592,
+    1
+  ],
+  "target_write_specificity_ci": [
+    0.9472627418109483,
+    1
+  ],
+  "alert_latency_seconds": {
+    "n": 12,
+    "median": 47.127705335617065,
+    "min": 23.70345711708069,
+    "max": 81.71728301048279
+  },
+  "detector_rule": {
+    "protected_suffix": "config/access_control.json",
+    "write_flags": [
+      "O_WRONLY",
+      "O_RDWR",
+      "O_TRUNC",
+      "O_CREAT",
+      "rename(",
+      "renameat("
+    ],
+    "campaign_correlation": "campaign_id and ordered stage"
+  }
+}
