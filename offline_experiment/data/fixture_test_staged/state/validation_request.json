@@ -1,0 +1,7 @@
+{
+  "reviewed_paths": [
+    "config/access_control.json",
+    "config/service.env"
+  ],
+  "ticket": "LAB-ONLY-001"
+}

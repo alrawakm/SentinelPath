@@ -1,0 +1,6 @@
+{
+  "campaign_id": "test_trigger",
+  "condition": "trigger_unsatisfied",
+  "pattern": "trigger",
+  "stage": 1
+}

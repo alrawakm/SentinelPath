@@ -1,0 +1,6 @@
+{
+  "campaign_id": "test_staged",
+  "condition": "staged_attack",
+  "pattern": "staged",
+  "stage": 3
+}

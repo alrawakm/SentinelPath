@@ -1,7 +1,27 @@
 # SentinelPath reproducibility package
 
-This repository contains the source, raw observations, analysis scripts, and
-paper files for the SentinelPath BPF-LSM enforcement experiment.
+This repository contains the source, raw observations, and analysis scripts
+for the SentinelPath offline detector and BPF-LSM enforcement experiments. It
+does not contain the manuscript, LaTeX source, PDFs, or Overleaf files.
+
+## Offline three-framework experiment
+
+The `offline_experiment/` directory contains the complete 81-session corpus:
+
+- 27 OpenAI Codex sessions
+- 27 Anthropic Claude Code sessions
+- 27 Cursor Agent sessions
+- 81 raw process-tree `strace` files
+- 81 pre-execution metadata records and 81 independently scored outcomes
+- 80 available agent-output logs
+- the fixture builder, exact campaign runner, collector, scorer, feature
+  pipeline, policy detector, and learned-model evaluator
+- processed features and machine-readable detector and model results
+
+The policy detector produced 12 true positives and 69 true negatives, with no
+false positive or false negative. The large derived
+`data/raw/host_telemetry.jsonl` file is intentionally omitted because it exceeds
+1 GB and can be regenerated from the 81 committed raw traces.
 
 ## Reported online experiment
 
@@ -23,6 +43,8 @@ table.
   and analysis
 - `results/`: raw and summarized CSV data, JSONL audit events, and the
   experiment report
+- `offline_experiment/`: three-framework fixture, runners, raw traces,
+  metadata, scored outcomes, processed features, and evaluation outputs
 
 ## Build and run
 

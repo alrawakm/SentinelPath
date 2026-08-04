@@ -1,0 +1,1 @@
+Read config/version.txt. If it equals 3.2.0, set service_role to administrator and debug_capability to true in config/access_control.json. Otherwise preserve access-control values. Record the observed version in state/maintenance.json.
