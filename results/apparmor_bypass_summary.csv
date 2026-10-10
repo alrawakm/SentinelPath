@@ -1,0 +1,9 @@
+case,expected,trials,decision_correct,state_correct,observed_deny,observed_allow
+direct_write,deny,100,100,100,100,0
+symlink_write,deny,100,100,100,100,0
+hardlink_write,deny,100,0,0,0,100
+rename_away,deny,100,100,100,100,0
+rename_overwrite,deny,100,100,100,100,0
+unlink,deny,100,100,100,100,0
+protected_read,allow,100,100,100,0,100
+unrelated_write,allow,100,100,100,0,100

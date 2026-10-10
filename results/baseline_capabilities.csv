@@ -1,0 +1,2 @@
+kernel,probe_path,filesystem,lsm,apparmor_parser,aa_exec,getenforce,semodule,auditctl,fapolicyd,evmctl,selinux_state
+"6.18.33.2-microsoft-standard-WSL2","/tmp","ext2/ext3","unavailable",yes,yes,no,no,no,no,no,"filesystem-present-no-getenforce"

@@ -1,0 +1,3 @@
+/usr/local/libexec/sentinelpath_op    --    gen_context(system_u:object_r:sentinelpath_test_exec_t,s0)
+/var/tmp/sentinelpath_selinux(/.*)?         gen_context(system_u:object_r:user_tmp_t,s0)
+/var/tmp/sentinelpath_selinux/protected\.json -- gen_context(system_u:object_r:sentinelpath_protected_t,s0)

@@ -1,0 +1,2 @@
+[wsl2]
+kernelCommandLine=lsm=landlock,lockdown,yama,loadpin,safesetid,integrity,apparmor,bpf

@@ -1,0 +1,15 @@
+## <summary>SentinelPath SELinux experiment interfaces.</summary>
+
+########################################
+## <summary>
+## Read a SentinelPath protected experiment object.
+## </summary>
+## <param name="domain" required="true">
+## <summary>Domain permitted to read the protected object.</summary>
+## </param>
+interface(`sentinelpath_read_protected',`
+    gen_require(`
+        type sentinelpath_protected_t;
+    ')
+    allow $1 sentinelpath_protected_t:file { getattr ioctl lock open read };
+')

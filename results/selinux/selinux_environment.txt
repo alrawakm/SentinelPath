@@ -1,0 +1,19 @@
+captured_at=2026-08-04T12:58:51+03:00
+Linux localhost-live.mshome.net 6.17.1-300.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Oct  6 15:37:21 UTC 2025 x86_64 GNU/Linux
+Fedora release 43 (Forty Three)
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   enforcing
+Mode from config file:          enforcing
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Memory protection checking:     actual (secure)
+Max kernel policy version:      35
+/dev/mapper/luks-8473d9f5-72d3-4a13-a66d-452bf09074c8[/root] btrfs rw,relatime,seclabel,compress=zstd:1,ssd,space_cache=v2,subvolid=256,subvol=/root
+active
+400 sentinelpath_selinux pp          
+drwxrwxrwx. 1 root root system_u:object_r:user_tmp_t:s0 138 Aug  4 12:58 /var/tmp/sentinelpath_selinux
+207666 -rw-rw-rw-. 2 root root system_u:object_r:sentinelpath_protected_t:s0 18 Aug  4 12:58 /var/tmp/sentinelpath_selinux/hardlink.json
+207666 -rw-rw-rw-. 2 root root system_u:object_r:sentinelpath_protected_t:s0 18 Aug  4 12:58 /var/tmp/sentinelpath_selinux/protected.json
